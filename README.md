@@ -3,7 +3,7 @@
 A Svelte 5 design system. 
 Customisable, composable and accessible. WCAG-focused and theme driven. 
 
-[Documentation](#) · [Live playground](#) · [npm](#)
+[Documentation](#) · [npm](#)
 
 ## Install
 
