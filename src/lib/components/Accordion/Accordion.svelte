@@ -1,7 +1,7 @@
 <script lang="ts">
     import type { Snippet } from "svelte";
-    import { createVariant } from "../../utils/builder";
-    import { accordionConfig, defaultAccordionConfig } from "./accordion.config";
+    import { createVariant } from "../../utils/builder.js";
+    import { accordionConfig, defaultAccordionConfig } from "./accordion.config.js";
 
     // Types ----------------------------------------------------------------
 

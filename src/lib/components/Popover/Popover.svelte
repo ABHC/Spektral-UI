@@ -1,8 +1,8 @@
 <script lang="ts">
     import type { Snippet } from "svelte";
-    import { createVariant } from "../../utils/builder";
-    import { popoverConfig, defaultPopoverConfig } from "./popover.config";
-    import type { PopoverPalette, PopoverElevation, PopoverDirection, PopoverAlign } from "./popover.config";
+    import { createVariant } from "../../utils/builder.js";
+    import { popoverConfig, defaultPopoverConfig } from "./popover.config.js";
+    import type { PopoverPalette, PopoverElevation, PopoverDirection, PopoverAlign } from "./popover.config.js";
 
     interface Props {
         open?: boolean;

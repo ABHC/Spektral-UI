@@ -1,8 +1,8 @@
 <script lang="ts">
     import type { Snippet } from 'svelte';
     import { onMount } from 'svelte';
-    import { createVariant } from "../../utils/builder";
-    import { headerConfig } from './header.config';
+    import { createVariant } from "../../utils/builder.js";
+    import { headerConfig } from './header.config.js';
 
     type Palette = "accent" | "tone";
 

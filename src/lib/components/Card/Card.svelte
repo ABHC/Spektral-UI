@@ -1,7 +1,7 @@
 <script lang="ts">
     import type { Snippet } from "svelte";
-    import { createVariant } from "../../utils/builder";
-    import { cardConfig, defaultCardConfig } from "./card.config";
+    import { createVariant } from "../../utils/builder.js";
+    import { cardConfig, defaultCardConfig } from "./card.config.js";
 
     // Types ------------------------------------------------------------------
 

@@ -1,6 +1,6 @@
 <script lang="ts">
-    import { createVariant } from '../../utils/builder';
-    import { radioGroupConfig } from './radiogroup.config';
+    import { createVariant } from '../../utils/builder.js';
+    import { radioGroupConfig } from './radiogroup.config.js';
 
     type Palette = "accent" | "tone";
     type Size = "sm" | "md" | "lg";

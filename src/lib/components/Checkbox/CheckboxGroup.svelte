@@ -1,6 +1,6 @@
 <script lang="ts">
-    import { createVariant } from '../../utils/builder';
-    import { checkboxGroupConfig } from './checkboxgroup.config';
+    import { createVariant } from '../../utils/builder.js';
+    import { checkboxGroupConfig } from './checkboxgroup.config.js';
 
     type Palette = "accent" | "tone";
     type Size = "sm" | "md" | "lg";

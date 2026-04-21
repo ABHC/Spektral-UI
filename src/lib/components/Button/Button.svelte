@@ -1,7 +1,7 @@
 <script lang="ts">
     import type { Snippet } from 'svelte';
-    import { createVariant } from "../../utils/builder";
-    import { buttonConfig } from './button.config';
+    import { createVariant } from "../../utils/builder.js";
+    import { buttonConfig } from './button.config.js';
 
     type Variant = "flat" | "outlined" | "ghost" | "naked";
     type Palette = "accent" | "tone" | "neutral" | "error" | "warning" | "success" | "info";

@@ -1,9 +1,9 @@
 <script lang="ts">
     import type { Snippet } from "svelte";
     import { onDestroy } from "svelte";
-    import { createVariant } from "../../utils/builder";
-    import { tooltipConfig, defaultTooltipConfig } from "./tooltip.config";
-    import type { TooltipPalette, TooltipDirection, TooltipAlign, TooltipElevation, TooltipSize } from "./tooltip.config";
+    import { createVariant } from "../../utils/builder.js";
+    import { tooltipConfig, defaultTooltipConfig } from "./tooltip.config.js";
+    import type { TooltipPalette, TooltipDirection, TooltipAlign, TooltipElevation, TooltipSize } from "./tooltip.config.js";
 
     interface Props {
         open?: boolean;

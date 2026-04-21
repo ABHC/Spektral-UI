@@ -1,7 +1,7 @@
 <script lang="ts">
     import type { Snippet } from "svelte";
-    import { createVariant } from "../../utils/builder";
-    import { explorerConfig } from "./explorer.config";
+    import { createVariant } from "../../utils/builder.js";
+    import { explorerConfig } from "./explorer.config.js";
 
     type Palette = "accent" | "tone";
 

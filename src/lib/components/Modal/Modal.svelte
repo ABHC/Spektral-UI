@@ -1,7 +1,7 @@
 <script lang="ts">
     import type { Snippet } from "svelte";
-    import { createVariant } from "../../utils/builder";
-    import { modalConfig, defaultModalConfig, type Elevation } from "./modal.config";
+    import { createVariant } from "../../utils/builder.js";
+    import { modalConfig, defaultModalConfig, type Elevation } from "./modal.config.js";
 
     type Palette = "tone" | "accent" | "accentbg";
 

@@ -1,7 +1,7 @@
 <script lang="ts">
     import type { Snippet } from 'svelte';
-    import { createVariant } from "../../utils/builder";
-    import { badgeConfig } from "./badge.config";
+    import { createVariant } from "../../utils/builder.js";
+    import { badgeConfig } from "./badge.config.js";
 
     type Variant = "flat" | "outlined";
     type Palette = "accent" | "tone" | "neutral" | "error" | "warning" | "success" | "info";

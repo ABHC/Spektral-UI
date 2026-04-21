@@ -1,10 +1,10 @@
 <script lang="ts" generics="T extends string | number">
     import type { Snippet } from 'svelte';
-    import { createVariant } from '../../utils/builder';
-    import { selectConfig } from './select.config';
+    import { createVariant } from '../../utils/builder.js';
+    import { selectConfig } from './select.config.js';
     import SearchField from '../SearchField/SearchField.svelte';
     import Popover from '../Popover/Popover.svelte';
-    import type { PopoverPalette, PopoverElevation } from '../Popover/popover.config';
+    import type { PopoverPalette, PopoverElevation } from '../Popover/popover.config.js';
 
     type Size = "sm" | "md" | "lg";
     type OptionEntry = { value: T; label?: string };

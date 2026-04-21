@@ -1,7 +1,7 @@
 <script lang="ts">
     import type { Snippet } from 'svelte';
-    import { createVariant } from '../../utils/builder';
-    import { inputConfig } from './input.config';
+    import { createVariant } from '../../utils/builder.js';
+    import { inputConfig } from './input.config.js';
 
     type Size = "sm" | "md" | "lg";
     type InputType = "text" | "email" | "password" | "number" | "search" | "tel" | "url";

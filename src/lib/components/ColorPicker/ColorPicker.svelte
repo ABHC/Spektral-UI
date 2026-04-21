@@ -1,7 +1,7 @@
 <script lang="ts">
     import type { Snippet } from "svelte";
-    import { createVariant } from "../../utils/builder";
-    import { colorPickerConfig, defaultColorPickerConfig } from "./colorPicker.config";
+    import { createVariant } from "../../utils/builder.js";
+    import { colorPickerConfig, defaultColorPickerConfig } from "./colorPicker.config.js";
     import { hexToOklch, oklchToHex, hexToRgbChannels } from "$lib/utils/contrast";
 
     // Types ------------------------------------------------------------------

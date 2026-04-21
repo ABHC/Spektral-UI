@@ -1,16 +1,16 @@
 <script lang="ts">
     import type { Snippet } from "svelte";
-    import { createVariant } from "../../utils/builder";
+    import { createVariant } from "../../utils/builder.js";
     import Modal from "../Modal/Modal.svelte";
     import Headline from "../Headline/Headline.svelte";
     import SearchField from "../SearchField/SearchField.svelte";
-    import { CommandConfig, defaultCommandConfig } from "./command.config";
+    import { CommandConfig, defaultCommandConfig } from "./command.config.js";
     import {
         type CommandItem,
         type CommandGroup,
         type CommandPalette,
         type CommandElevation,
-    } from "./command.config";
+    } from "./command.config.js";
 
     interface Props {
         open?: boolean;

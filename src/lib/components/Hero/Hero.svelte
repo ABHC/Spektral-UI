@@ -1,6 +1,6 @@
 <script lang="ts">
     import type { Snippet } from "svelte";
-    import { type PatternPreset, PATTERN_PRESETS, tintPattern } from "../../utils/patterns";
+    import { type PatternPreset, PATTERN_PRESETS, tintPattern } from "../../utils/patterns.js";
 
     // Types ------------------------------------------------------------------
 

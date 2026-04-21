@@ -10,9 +10,9 @@
         type Columns,
         type HeroSpan,
         type Elevation,
-    } from "./tilegrid.config";
+    } from "./tilegrid.config.js";
 
-    import { type PatternPreset, PATTERN_PRESETS, tintPattern } from "../../utils/patterns";
+    import { type PatternPreset, PATTERN_PRESETS, tintPattern } from "../../utils/patterns.js";
 
     type Effect = "none" | "glow" | "blur" | "fade";
     type Mask = "none" | "ellipse" | "fade";

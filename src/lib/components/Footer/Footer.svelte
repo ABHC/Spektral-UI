@@ -1,8 +1,8 @@
 <script lang="ts">
     import type { Snippet } from 'svelte';
-    import { createVariant } from "../../utils/builder";
-    import { footerConfig } from './footer.config';
-    import { type PatternPreset, PATTERN_PRESETS, tintPattern } from "../../utils/patterns";
+    import { createVariant } from "../../utils/builder.js";
+    import { footerConfig } from './footer.config.js';
+    import { type PatternPreset, PATTERN_PRESETS, tintPattern } from "../../utils/patterns.js";
 
     type Palette = "accent" | "tone";
 

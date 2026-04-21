@@ -1,7 +1,7 @@
 <script lang="ts">
     import type { Snippet } from 'svelte';
-    import { createVariant } from '../../utils/builder';
-    import { headlineConfig } from './headline.config';
+    import { createVariant } from '../../utils/builder.js';
+    import { headlineConfig } from './headline.config.js';
 
     type Size = "xs" | "sm" | "md" | "lg";
 

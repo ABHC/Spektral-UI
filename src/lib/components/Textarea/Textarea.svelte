@@ -1,6 +1,6 @@
 <script lang="ts">
-    import { createVariant } from '../../utils/builder';
-    import { TextareaConfig } from './textarea.config';
+    import { createVariant } from '../../utils/builder.js';
+    import { TextareaConfig } from './textarea.config.js';
 
     type Size = "sm" | "md" | "lg";
     type Resize = "none" | "vertical" | "both";

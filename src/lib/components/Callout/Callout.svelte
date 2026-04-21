@@ -1,7 +1,7 @@
 <script lang="ts">
     import type { Snippet } from 'svelte';
-    import { createVariant } from "../../utils/builder";
-    import { calloutConfig } from './callout.config';
+    import { createVariant } from "../../utils/builder.js";
+    import { calloutConfig } from './callout.config.js';
 
     type Variant = "accent" | "neutral" | "error" | "warning" | "success" | "info";
     type Align = "center" | "start";

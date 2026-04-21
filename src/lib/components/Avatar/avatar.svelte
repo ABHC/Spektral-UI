@@ -1,6 +1,6 @@
 <script lang="ts">
-    import { createVariant } from "../../utils/builder";
-    import { avatarConfig } from "./avatar.config";
+    import { createVariant } from "../../utils/builder.js";
+    import { avatarConfig } from "./avatar.config.js";
 
     type Size = "xs" | "sm" | "md" | "lg" | "xl";
     type Status = "online" | "offline" | "absent" | "do-not-disturb";

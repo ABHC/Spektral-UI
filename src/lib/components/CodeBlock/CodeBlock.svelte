@@ -1,6 +1,6 @@
 <script lang="ts">
-    import { createVariant } from "../../utils/builder";
-    import { codeblockConfig } from "./codeblock.config";
+    import { createVariant } from "../../utils/builder.js";
+    import { codeblockConfig } from "./codeblock.config.js";
     import Button from "../Button/Button.svelte";
 
     type Variant = "simple" | "titled" | "filename" | "tabbed" | "terminal";

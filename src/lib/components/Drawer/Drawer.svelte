@@ -1,7 +1,7 @@
 <script lang="ts">
     import type { Snippet } from "svelte";
-    import { createVariant } from "../../utils/builder";
-    import { drawerConfig } from "./drawer.config";
+    import { createVariant } from "../../utils/builder.js";
+    import { drawerConfig } from "./drawer.config.js";
 
     type Direction = "left" | "right" | "top" | "bottom";
     type Palette = "accent" | "tone";

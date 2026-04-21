@@ -1,7 +1,7 @@
 <script lang="ts">
     import type { Snippet } from 'svelte';
-    import { createVariant } from "../../utils/builder";
-    import { navConfig } from "./nav.config";
+    import { createVariant } from "../../utils/builder.js";
+    import { navConfig } from "./nav.config.js";
 
     type Position = "fixed" | "floating";
     type Direction = "top" | "bottom" | "left" | "right";

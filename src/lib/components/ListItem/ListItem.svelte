@@ -1,7 +1,7 @@
 <script lang="ts">
     import type { Snippet } from 'svelte';
-    import { createVariant } from "../../utils/builder";
-    import { listItemConfig } from './listItem.config';
+    import { createVariant } from "../../utils/builder.js";
+    import { listItemConfig } from './listItem.config.js';
 
     type Size = "sm" | "md" | "lg";
     type Palette = "tone" | "accent" | "ghost" | "neutral" | "error" | "warning" | "success" | "info";

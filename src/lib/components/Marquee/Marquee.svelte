@@ -1,7 +1,7 @@
 <script lang="ts">
     import type { Snippet } from "svelte";
-    import { createVariant } from "../../utils/builder";
-    import { marqueeConfig, defaultMarqueeConfig } from "./marquee.config";
+    import { createVariant } from "../../utils/builder.js";
+    import { marqueeConfig, defaultMarqueeConfig } from "./marquee.config.js";
 
     // Types ------------------------------------------------------------------
 

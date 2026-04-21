@@ -1,6 +1,6 @@
 <script lang="ts">
-    import { createVariant } from "../../utils/builder";
-    import { sliderConfig } from './slider.config';
+    import { createVariant } from "../../utils/builder.js";
+    import { sliderConfig } from './slider.config.js';
 
     type Palette = "accent" | "tone" | "neutral" | "error" | "warning" | "success" | "info";
     type Size = "sm" | "md" | "lg";

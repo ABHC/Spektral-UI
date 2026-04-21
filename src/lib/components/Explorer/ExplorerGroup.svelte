@@ -1,7 +1,7 @@
 <script lang="ts">
     import type { Snippet } from "svelte";
-    import { createVariant } from "../../utils/builder";
-    import { explorerGroupConfig } from "./explorer.config";
+    import { createVariant } from "../../utils/builder.js";
+    import { explorerGroupConfig } from "./explorer.config.js";
 
     interface Props {
         label: string;

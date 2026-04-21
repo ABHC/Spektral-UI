@@ -1,8 +1,8 @@
 <script lang="ts">
     import type { Snippet } from 'svelte';
     import { fly } from 'svelte/transition';
-    import { createVariant } from "../../utils/builder";
-    import { alertConfig } from './alert.config';
+    import { createVariant } from "../../utils/builder.js";
+    import { alertConfig } from './alert.config.js';
     import Button from '../Button/Button.svelte';
 
     type Variant  = "neutral" | "info" | "success" | "warning" | "error";

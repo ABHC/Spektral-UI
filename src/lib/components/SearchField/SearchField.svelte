@@ -1,7 +1,7 @@
 <script lang="ts">
-    import { createVariant } from "../../utils/builder";
-    import { searchFieldConfig, defaultSearchFieldConfig } from "./searchfield.config";
-    import type { SearchFieldSize, SearchFieldPalette } from "./searchfield.config";
+    import { createVariant } from "../../utils/builder.js";
+    import { searchFieldConfig, defaultSearchFieldConfig } from "./searchfield.config.js";
+    import type { SearchFieldSize, SearchFieldPalette } from "./searchfield.config.js";
 
     import { onMount } from "svelte";
 

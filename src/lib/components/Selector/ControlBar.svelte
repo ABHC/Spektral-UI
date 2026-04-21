@@ -1,7 +1,7 @@
 <script lang="ts">
     import type { Snippet } from 'svelte';
-    import { createVariant } from "../../utils/builder";
-    import { controlConfig } from './controlbar.config';
+    import { createVariant } from "../../utils/builder.js";
+    import { controlConfig } from './controlbar.config.js';
 
     type Palette = "accent" | "tone" | "accentbg";
 

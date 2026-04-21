@@ -1,7 +1,7 @@
 <script lang="ts">
-    import { createVariant } from "../../utils/builder";
-    import { swatchRowConfig, defaultSwatchRowConfig } from "./swatchRow.config";
-    import type { Swatch } from "./swatchRow.config";
+    import { createVariant } from "../../utils/builder.js";
+    import { swatchRowConfig, defaultSwatchRowConfig } from "./swatchRow.config.js";
+    import type { Swatch } from "./swatchRow.config.js";
     import { hexToOklch } from "$lib/utils/contrast";
     import CopyButton from "../Button/CopyButton.svelte";
 

@@ -1,7 +1,7 @@
 <script lang="ts">
     import type { Snippet } from "svelte";
     import { getContext } from "svelte";
-    import { TIMELINE_KEY, type TimelineContext } from "./timeline.config";
+    import { TIMELINE_KEY, type TimelineContext } from "./timeline.config.js";
 
     // Props
 

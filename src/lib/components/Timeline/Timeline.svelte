@@ -1,7 +1,7 @@
 <script lang="ts">
     import type { Snippet } from "svelte";
     import { setContext } from "svelte";
-    import { createVariant } from "../../utils/builder";
+    import { createVariant } from "../../utils/builder.js";
     import {
         TIMELINE_KEY,
         timelineConfig,
@@ -13,7 +13,7 @@
         type TimelineElevation,
         type TimelineOrientation,
         type TimelineConnectorStyle,
-    } from "./timeline.config";
+    } from "./timeline.config.js";
 
     // Props ----------------------------------------------------------------
 

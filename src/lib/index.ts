@@ -52,6 +52,6 @@ export { default as Support }         from './components/Support/Support.svelte'
 
 // Utilities ------------------------------------------------------------------
 
-export { createVariant } from './utils/builder';
-export { type PatternPreset } from './utils/patterns';
+export { createVariant } from './utils/builder.js';
+export { type PatternPreset } from './utils/patterns.js';
 

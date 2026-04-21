@@ -1,7 +1,7 @@
 <script lang="ts">
     import type { Snippet } from "svelte";
-    import { createVariant } from "../../utils/builder";
-    import { dataTableConfig, defaultDataTableConfig } from "./dataTable.config";
+    import { createVariant } from "../../utils/builder.js";
+    import { dataTableConfig, defaultDataTableConfig } from "./dataTable.config.js";
 
     // Types ----------------------------------------------------------------
 

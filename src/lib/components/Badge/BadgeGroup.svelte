@@ -1,6 +1,6 @@
 <script lang="ts">
     import Badge from "./Badge.svelte";
-    import type { BadgeItem } from "./badge.config";
+    import type { BadgeItem } from "./badge.config.js";
 
     type Variant = "flat" | "outlined";
     type Palette = "accent" | "tone" | "error" | "warning" | "success" | "info" | "neutral";
