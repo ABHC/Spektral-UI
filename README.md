@@ -1,50 +1,159 @@
 # Spektral UI
 
-A Svelte 5 design system. 
-Customisable, composable and accessible. WCAG-focused and theme driven. 
+A Svelte 5 design system.
+Customisable, composable and accessible. WCAG-focused and theme driven.
 
-[Documentation](#) · [npm](#)
+[Documentation](https://spektral.combe.tf/) · [npm](https://www.npmjs.com/package/@abhc/spektral-ui)
 
 ## Install
 
 ```bash
-npm install @spektral/ui
+npm i @abhc/spektral-ui
 ```
 
 ## Quick start
 
+Import the token file once in your app entry point (e.g. `+layout.svelte`):
+
+```ts
+import '@abhc/spektral-ui/tokens.css';
+```
+
+Then use components anywhere:
+
 ```svelte
 <script>
-  import { Button, Card, Badge } from '@spektral/ui';
+  import { Button, Card, Badge } from '@abhc/spektral-ui';
 </script>
 
 <Card>
-  <Badge>New</Badge>
+  <Badge palette="success">New</Badge>
   <Button palette="accent">Get started</Button>
 </Card>
 ```
 
-Import the tokens once, in your app entry:
+## Components
 
-```ts
-import '@spektral/ui/tokens.css';
+40+ components across layout, controls, overlays, feedback and content.
+
+### Layout
+| Component | Description |
+|-----------|-------------|
+| `Header` | App header shell |
+| `Footer` | App footer shell |
+| `Nav` | Navigation bar |
+| `Hero` | Full-width section with layout presets, palette, SVG pattern backgrounds and mask effects |
+| `TileGrid` | Responsive grid with pattern background support |
+| `Explorer` / `ExplorerGroup` / `ExplorerLink` | File-tree style sidebar navigation |
+
+### Controls
+| Component | Description |
+|-----------|-------------|
+| `Button` | Multi-variant button (flat, outlined, ghost, naked) with animation and direction options |
+| `Badge` | Inline label with palette, size, elevation and optional trailing action |
+| `Input` | Text input |
+| `Textarea` | Multiline text input |
+| `Select` | Dropdown select built on Popover |
+| `CheckboxGroup` | Checkbox list |
+| `RadioGroup` | Radio button list |
+| `Switch` | Toggle switch |
+| `Slider` | Range slider |
+| `SearchField` | Search input with clear action |
+| `ColorPicker` | OKLCH color picker with hex input |
+| `Selector` / `ControlBar` | Segmented control / tab bar |
+
+### Overlays
+| Component | Description |
+|-----------|-------------|
+| `Drawer` | Side panel overlay |
+| `Modal` | Dialog overlay |
+| `Popover` | Anchored floating panel with direction and alignment options |
+| `Tooltip` | Hover tooltip with direction and size variants |
+| `Command` | Command palette / search modal |
+
+### Feedback
+| Component | Description |
+|-----------|-------------|
+| `Alert` | Toast/notification with semantic variants and viewport positioning |
+| `Callout` | Highlighted text block |
+| `Progress` | Progress bar |
+
+### Content
+| Component | Description |
+|-----------|-------------|
+| `Card` | Content container with variant, elevation and rounding options |
+| `ListItem` | Structured list row |
+| `Accordion` / `AccordionHeader` | Collapsible content sections |
+| `DataTable` | Sortable data table |
+| `CodeBlock` | Syntax-highlighted code with copy, filename, tabs and terminal variants |
+| `Avatar` | User avatar with fallback initials |
+| `Headline` | Display heading with palette and size variants |
+| `Timeline` / `TimelineItem` | Timeline layout |
+| `Marquee` | Scrolling content strip |
+| `Support` | "Built with Spektral" attribution badge |
+| `SwatchRow` | Color swatch display row |
+
+### Branding
+| Component | Description |
+|-----------|-------------|
+| `LogoSpektral` | Spektral UI logo asset |
+| `Support` | "Built with Spektral" attribution badge |
+
+## Prop system
+
+All components share a consistent prop vocabulary:
+
+- **`variant`** — visual style: `flat` · `outlined` · `ghost` · `naked`
+- **`palette`** — semantic color: `accent` · `tone` · `neutral` · `error` · `warning` · `success` · `info`
+- **`size`** — `sm` · `md` · `lg`
+- **`elevation`** — shadow level: `none` · `subtle` · `hard`
+
+Not every prop applies to every component — check the [docs](https://spektral.combe.tf/) for per-component APIs.
+
+## Token system
+
+`tokens.css` exposes CSS custom properties for colors (OKLCH palettes), typography, radii and shadows. Light and dark modes are built in and toggled via the `data-theme` attribute or the `ModeToggle` component.
+
+To customize the theme, override the CSS variables in your own stylesheet after importing `tokens.css`:
+
+```css
+:root {
+  --sk-accent-hue: 260;
+  --sk-radius-md: 8px;
+}
 ```
 
-## What's inside
+## Utilities
 
-- 35+ components: Accordion, Alert, Avatar, Badge, Button, Callout, Card, Checkbox, CodeBlock, ColorPicker, Command, DataTable, Drawer, Explorer, Footer, Header, Headline, Hero, Input, ListItem, Marquee, Modal, Nav, Popover, Progress, RadioGroup, SearchField, Select, Selector, Slider, Switch, Textarea, TileGrid, Timeline, Tooltip.
-- A token system (`tokens.css`) with palettes, tones, typography, radii, shadows.
-- Light/dark support out of the box.
-- Use the theme export system to emit a custom token file to replace the default token.ccs in your project.
+Two utilities are exported for building custom components that integrate with the variant system:
+
+```ts
+import { createVariant } from '@abhc/spektral-ui';
+import type { PatternPreset } from '@abhc/spektral-ui';
+```
+
+- **`createVariant(config)`** — resolves a set of prop values to a class string using a declarative config object. Used internally by every component.
+- **`PatternPreset`** — type for the SVG pattern presets available in `Hero`, `TileGrid` and `Footer`: `scallops` · `grid` · `sunburst` · `lozenge` · `sunrise` · `atoms` · `waves` · `diamonds` · `shippo` · `kumi_kikko`.
+
+Color conversion helpers are also exported for working with the OKLCH color space:
+
+```ts
+import { hexToOklch, oklchToHex, hexToRgbChannels } from '@abhc/spektral-ui';
+import type { Oklch } from '@abhc/spektral-ui';
+```
+
+- **`hexToOklch(hex)`** — converts a hex color string to an `Oklch` object `{ l, c, h }`.
+- **`oklchToHex(l, c, h)`** — converts OKLCH channels back to a hex string, with automatic gamut clamping.
+- **`hexToRgbChannels(hex)`** — returns the RGB channels as a comma-separated string (e.g. `"255, 128, 0"`), useful for CSS `rgb()` / `rgba()` variables.
 
 ## Requirements
 
 - Svelte `^5.0.0`
-- Modern browsers (CSS custom properties, `:has`, `color-mix`).
+- Modern browsers (CSS custom properties, `:has`, `color-mix`)
 
 ## Documentation
 
-Full docs, component API, live examples, theming guide: **[link to docs site]**.
+Full docs, component API, live examples and theming guide: [spektral.combe.tf](https://spektral.combe.tf/)
 
 ## License
 

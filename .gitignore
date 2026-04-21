@@ -8,3 +8,4 @@ dist/
 *.log
 publish-steps.md
 .publish_steps.md
+publish_steps.md

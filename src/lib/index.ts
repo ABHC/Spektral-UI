@@ -54,4 +54,5 @@ export { default as Support }         from './components/Support/Support.svelte'
 
 export { createVariant } from './utils/builder.js';
 export { type PatternPreset } from './utils/patterns.js';
+export { hexToOklch, oklchToHex, hexToRgbChannels, type Oklch } from './utils/colors.js';
 

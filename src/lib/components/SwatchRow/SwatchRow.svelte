@@ -2,7 +2,7 @@
     import { createVariant } from "../../utils/builder.js";
     import { swatchRowConfig, defaultSwatchRowConfig } from "./swatchRow.config.js";
     import type { Swatch } from "./swatchRow.config.js";
-    import { hexToOklch } from "$lib/utils/contrast";
+    import { hexToOklch } from "../../utils/colors.js";
     import CopyButton from "../Button/CopyButton.svelte";
 
     // Props
