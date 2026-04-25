@@ -6,7 +6,7 @@
     interface Props {
         label: string;
         href?: string;
-        icon?: Snippet;
+        leading?: Snippet;
         active?: boolean;
         naked?: boolean;
         onclick?: () => void;
@@ -15,7 +15,7 @@
     let {
         label,
         href,
-        icon,
+        leading,
         active = false,
         naked = false,
         onclick,
@@ -34,9 +34,9 @@
 {#if href}
     <div class={container_classes}>
         <a class="explorer-link-item" {href} onclick={onclick}>
-            {#if icon}
-                <span class="explorer-link-icon" aria-hidden="true">
-                    {@render icon()}
+            {#if leading}
+                <span class="explorer-link-leading" aria-hidden="true">
+                    {@render leading()}
                 </span>
             {/if}
             <span class="explorer-link-label">{label}</span>
@@ -45,9 +45,9 @@
 {:else}
     <div class={container_classes}>
         <button class="explorer-link-item" onclick={onclick} type="button">
-            {#if icon}
-                <span class="explorer-link-icon" aria-hidden="true">
-                    {@render icon()}
+            {#if leading}
+                <span class="explorer-link-leading" aria-hidden="true">
+                    {@render leading()}
                 </span>
             {/if}
             <span class="explorer-link-label">{label}</span>
@@ -59,15 +59,16 @@
     /* Container - carries the left border indicator */
     .explorer-link {
         margin-left: 0.35rem;
-        border-left: 2px solid var(--explorer-hover-bg);
+        border-left: 2px solid var(--explorer-border);
     }
 
     .explorer-link-active {
-        border-left-color: var(--explorer-active, currentColor);
+        border-left-color: var(--explorer-active-border, currentColor);
     }
 
     .explorer-link-naked {
-        border-left-color: transparent;
+        border-left: none;
+        margin-left: 0;
     }
 
     /* Item - the interactive a/button inside the container */
@@ -90,6 +91,10 @@
         margin-left: 0.3rem;
     }
 
+    .explorer-link-naked .explorer-link-item {
+        margin-left: 0;
+    }
+
     .explorer-link-item:hover {
         background: var(--explorer-hover-bg, rgba(128, 128, 128, 0.1));
     }
@@ -100,7 +105,7 @@
         font-weight: 600;
     }
 
-    .explorer-link-icon {
+    .explorer-link-leading {
         display: flex;
         align-items: center;
         font-size: 1rem;

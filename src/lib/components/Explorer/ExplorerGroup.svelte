@@ -5,7 +5,7 @@
 
     interface Props {
         label: string;
-        icon?: Snippet;
+        leading?: Snippet;
         collapsible?: boolean;
         headline?: boolean;
         open?: boolean;
@@ -14,7 +14,7 @@
 
     let {
         label,
-        icon,
+        leading,
         collapsible = true,
         headline = true,
         open = true,
@@ -39,9 +39,9 @@
             onclick={() => { is_open = !is_open; }}
             aria-expanded={is_open}
         >
-            {#if icon}
-                <span class="explorer-group-icon" aria-hidden="true">
-                    {@render icon()}
+            {#if leading}
+                <span class="explorer-group-leading" aria-hidden="true">
+                    {@render leading()}
                 </span>
             {/if}
 
@@ -74,9 +74,9 @@
             class="explorer-group-header"
             aria-expanded={is_open}
         >
-            {#if icon}
-                <span class="explorer-group-icon" aria-hidden="true">
-                    {@render icon()}
+            {#if leading}
+                <span class="explorer-group-leading" aria-hidden="true">
+                    {@render leading()}
                 </span>
             {/if}
 
@@ -139,7 +139,7 @@
         background: var(--explorer-hover-bg, rgba(128, 128, 128, 0.1));
     }
 
-    .explorer-group-icon {
+    .explorer-group-leading {
         display: flex;
         align-items: center;
         font-size: 1rem;
@@ -162,7 +162,6 @@
     }
 
     .explorer-group-label {
-        /*font-size: 0.7rem;*/
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.1em;

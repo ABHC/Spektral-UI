@@ -42,12 +42,18 @@
             <span class="sw-label">{swatch.label}</span>
             <span class="sw-value-row">
                 <span class="sw-hex">{swatch.value}</span>
-                <CopyButton to_copy={swatch.value} />
+                <CopyButton 
+                    to_copy={swatch.value} 
+                    rounded={rounded}
+                />
             </span>
             {#if oklch}
                 <span class="sw-value-row">
                     <span class="sw-oklch">{oklch}</span>
-                    <CopyButton to_copy={oklch} rounded/>
+                    <CopyButton 
+                        to_copy={oklch} 
+                        rounded={rounded}
+                    />
                 </span>
             {/if}
         </div>

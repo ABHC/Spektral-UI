@@ -205,3 +205,7 @@ Full docs, component API, live examples and theming guide: [spektral.combe.tf](h
 ## License
 
 GPL-3.0 — see [LICENSE](./LICENSE).
+
+## AI Usage
+
+AI (primarily Claude Code) was used during the development of this package. However, the generated code is always human reviewed and tested before being pushed to the repository.  

@@ -42,23 +42,19 @@
         color: var(--text-accent);
         --explorer-text: var(--text-accent);
         --explorer-muted: var(--text-accent);
-        --explorer-hover-bg: var(--accent-ghost-hover);
-        --explorer-active: var(--tone-muted);
-        --explorer-active-bg: var(--accent-ghost-hover);
-        --explorer-active-text: var(--text);
-        --explorer-active-border: var(--accent-hover);
-        --explorer-separator: var(--accent-hover);
+        --explorer-border: var(--tone-ghost-hover);
+        --explorer-hover-bg: var(--tone-ghost-hover);
+        --explorer-active: var(--text-accent);
+        --explorer-active-border: var(--text-accent);
     }
 
     .explorer-palette-tone {
         color: var(--text);
         --explorer-text: var(--text);
         --explorer-muted: var(--text-muted);
+        --explorer-border: var(--tone-hover);
         --explorer-hover-bg: var(--tone-hover);
         --explorer-active: var(--accent-muted);
-        --explorer-active-bg: var(--accent);
-        --explorer-active-text: var(--text-accent);
-        --explorer-active-border: var(--accent);
-        --explorer-separator: var(--tone-hover);
+        --explorer-active-border: var(--accent-muted);
     }
 </style>
