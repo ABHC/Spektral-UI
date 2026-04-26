@@ -10,7 +10,6 @@
         palette?: Palette;
         rounded?: boolean;
         visible?: boolean;
-        style?: string;
         leading?: Snippet;
         children?: Snippet;
         trailing?: Snippet;
@@ -20,7 +19,6 @@
         palette = "tone",
         rounded = false,
         visible = $bindable(true),
-        style,
         leading,
         children,
         trailing
@@ -32,14 +30,15 @@
         resolve({ palette, rounded }).trim()
     );
 
-    let el: HTMLElement;
+    let element: HTMLElement | undefined = $state();
 
     onMount(() => {
+        if (!element) return;
         const observer = new IntersectionObserver(
             ([entry]) => { visible = entry.isIntersecting; },
             { threshold: 0 }
         );
-        observer.observe(el);
+        observer.observe(element);
         return () => observer.disconnect();
     });
 
@@ -47,8 +46,7 @@
 
 <header
     class="header-base {wrapper_classes}"
-    {style}
-    bind:this={el}
+    bind:this={element}
 >
     {#if leading}
         <div class="header-leading">

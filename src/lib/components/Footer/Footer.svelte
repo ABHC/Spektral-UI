@@ -1,5 +1,6 @@
 <script lang="ts">
     import type { Snippet } from 'svelte';
+    import { onMount } from 'svelte';
     import { createVariant } from "../../utils/builder.js";
     import { footerConfig } from './footer.config.js';
     import { type PatternPreset, PATTERN_PRESETS, tintPattern } from "../../utils/patterns.js";
@@ -13,7 +14,7 @@
     interface Props {
         palette?: Palette;
         rounded?: boolean;
-        style?: string;
+        visible?: boolean;
         pattern?: PatternPreset | string;
         pattern_color?: string;
         pattern_opacity?: number;
@@ -31,7 +32,7 @@
     let {
         palette = "accent",
         rounded = false,
-        style,
+        visible = $bindable(true),
         pattern = "none",
         pattern_color = "white",
         pattern_opacity = 0.4,
@@ -74,21 +75,31 @@
         return `linear-gradient(${dir_map[pattern_mask_direction]}, black 0%, transparent ${pattern_mask_size}%)`;
     });
 
-    const root_style = $derived(
-        [
-            style,
-            `--footer-pattern-bg: ${pattern_bg}`,
-            `--footer-pattern-opacity: ${pattern_opacity}`,
-            `--footer-pattern-size: ${pattern_size ?? "auto"}`,
-            `--footer-pattern-mask: ${mask_value}`,
-            `--footer-effect-opacity: ${pattern_effect_opacity}`,
-        ].filter(Boolean).join("; ")
+    const pattern_style = $derived(
+        `--footer-pattern-bg: ${pattern_bg};`
+        + ` --footer-pattern-opacity: ${pattern_opacity};`
+        + ` --footer-pattern-size: ${pattern_size ?? "auto"};`
+        + ` --footer-pattern-mask: ${mask_value};`
+        + ` --footer-effect-opacity: ${pattern_effect_opacity};`
     );
+
+    let element: HTMLElement | undefined = $state();
+
+    onMount(() => {
+        if (!element) return;
+        const observer = new IntersectionObserver(
+            ([entry]) => { visible = entry.isIntersecting; },
+            { threshold: 0 }
+        );
+        observer.observe(element);
+        return () => observer.disconnect();
+    });
 </script>
 
 <footer
     class="footer-base {wrapper_classes}"
-    style={root_style}
+    style={pattern_style}
+    bind:this={element}
 >
     {#if pattern_bg !== "none"}
         <div class="footer-pattern"></div>
