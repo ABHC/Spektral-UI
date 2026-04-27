@@ -74,7 +74,7 @@
         flex-direction: column;
         justify-content: space-around;
         gap: 2px;
-        border: var(--spk-border-thin) solid var(--tone-ghost-hover);
+        border: var(--spk-border-thin) solid var(--spk-tone-ghost-hover);
         overflow: hidden;
     }
 

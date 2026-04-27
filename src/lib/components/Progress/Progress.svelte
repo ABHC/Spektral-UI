@@ -78,7 +78,7 @@
 
     .progress-base {
         width: 100%;
-        background: var(--tone-hover);
+        background: var(--spk-tone-hover);
         overflow: hidden;
         position: relative;
         margin: 10px 0;
@@ -112,18 +112,18 @@
 
     .progress-outlined {
         background: transparent;
-        border: var(--spk-border) solid var(--tone-hover);
-        /*box-shadow: inset 0 0 0 2px var(--tone-hover);*/
+        border: var(--spk-border) solid var(--spk-tone-hover);
+        /*box-shadow: inset 0 0 0 2px var(--spk-tone-hover);*/
     }
 
     /* Elevation ------------------------------------------------------- */
 
     .progress-elevation-subtle { 
-        box-shadow: var(--spk-elevation-subtle) var(--shadow-subtle);
+        box-shadow: var(--spk-elevation-subtle) var(--spk-shadow-subtle);
     }
 
     .progress-elevation-hard { 
-        box-shadow: var(--spk-elevation-hard) var(--shadow-hard);
+        box-shadow: var(--spk-elevation-hard) var(--spk-shadow-hard);
     }
 
     /* Fill - base ------------------------------------------------------ */
@@ -144,31 +144,31 @@
     /* Fill - palette --------------------------------------------------- */
 
     .progress-fill-accent  {
-        background: var(--accent);  
+        background: var(--spk-accent);  
     }
 
     .progress-fill-tone { 
-        background: var(--tone-muted); 
+        background: var(--spk-tone-muted); 
     }
 
     .progress-fill-neutral { 
-        background: var(--neutral); 
+        background: var(--spk-neutral); 
     }
 
     .progress-fill-error { 
-        background: var(--error); 
+        background: var(--spk-error); 
     
     }
     .progress-fill-warning { 
-        background: var(--warning); 
+        background: var(--spk-warning); 
     }
 
     .progress-fill-success {
-        background: var(--success);
+        background: var(--spk-success);
     }
 
     .progress-fill-info { 
-        background: var(--info);
+        background: var(--spk-info);
     }
 
     /* Value - base ----------------------------------------------------- */
@@ -183,31 +183,31 @@
     /* Fill - palette --------------------------------------------------- */
 
     .progress-value-accent  {
-        color: var(--accent-muted);  
+        color: var(--spk-accent-muted);  
     }
 
     .progress-value-tone { 
-        color: var(--tone-muted);
+        color: var(--spk-tone-muted);
     }
 
     .progress-value-neutral { 
-        color: var(--neutral-muted);
+        color: var(--spk-neutral-muted);
     }
 
     .progress-value-error { 
-        color: var(--error-muted); 
+        color: var(--spk-error-muted); 
     
     }
     .progress-value-warning { 
-        color: var(--warning-muted); 
+        color: var(--spk-warning-muted); 
     }
 
     .progress-value-success {
-        color: var(--success-muted);
+        color: var(--spk-success-muted);
     }
 
     .progress-value-info { 
-        color: var(--info-muted);
+        color: var(--spk-info-muted);
     }
 
     /* Indeterminate --------------------------------------------------- */

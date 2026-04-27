@@ -2,8 +2,8 @@
 
 /*
     palette
-    - tone   : --card background, --text color (default)
-    - accent : --accent background, --text-accent color
+    - tone   : --card background, --spk-text color (default)
+    - accent : --spk-accent background, --spk-text-accent color
 
     rounded
     Applies border-radius (16px).

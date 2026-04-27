@@ -145,7 +145,7 @@
         justify-content: center;
         align-items: center;
         gap: 0.5rem;
-        font-family: var(--font-body);
+        font-family: var(--spk-font-body);
         margin-top: auto;
         z-index: var(--spk-z-sticky);
     }
@@ -178,7 +178,7 @@
     .footer-effect-glow {
         background: radial-gradient(
             ellipse 80% 120% at 50% 100%,
-            color-mix(in oklch, var(--accent) 12%, transparent),
+            color-mix(in oklch, var(--spk-accent) 12%, transparent),
             transparent
         );
     }
@@ -191,7 +191,7 @@
         background: linear-gradient(
             to bottom,
             transparent 0%,
-            color-mix(in oklch, var(--tone-bg) 60%, transparent) 100%
+            color-mix(in oklch, var(--spk-tone-bg) 60%, transparent) 100%
         );
     }
 
@@ -200,15 +200,15 @@
 
     /* Palette - accent (default: matches layout footer) */
     .footer-palette-accent {
-        background: var(--accent);
-        color: var(--text-accent);
+        background: var(--spk-accent);
+        color: var(--spk-text-accent);
     }
 
     /* Palette - tone */
     .footer-palette-tone {
-        background: var(--tone);
-        color: var(--text);
-        border-top: var(--spk-border-accent) solid var(--accent);
+        background: var(--spk-tone);
+        color: var(--spk-text);
+        border-top: var(--spk-border-accent) solid var(--spk-accent);
     }
 
     /* Slots layout */

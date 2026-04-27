@@ -88,14 +88,14 @@
 
     /* Palette - accent */
     .avatar-palette-accent {
-        background: var(--accent);
-        color: var(--text-accent);
+        background: var(--spk-accent);
+        color: var(--spk-text-accent);
     }
 
     /* Palette - tone */
     .avatar-palette-tone {
-        background: var(--tone-hover);
-        color: var(--text-muted);
+        background: var(--spk-tone-hover);
+        color: var(--spk-text-muted);
     }
 
     /* Sizes */
@@ -151,7 +151,7 @@
         width: 22%;
         height: 22%;
         border-radius: var(--spk-radius-circle);
-        border: var(--spk-border) solid var(--dot-bg, var(--tone-bg));
+        border: var(--spk-border) solid var(--dot-bg, var(--spk-tone-bg));
     }
 
     /* State dot - position 85%/85% = edge of the circle 45° */
@@ -166,19 +166,19 @@
 
     /* State */
     .avatar-online {
-        background: var(--success);
+        background: var(--spk-success);
     }
 
     .avatar-offline {
-        background: var(--error);
+        background: var(--spk-error);
     }
 
     .avatar-absent {
-        background: var(--warning);
+        background: var(--spk-warning);
     }
 
     .avatar-do-not-disturb {
-        background: var(--dot-bg, var(--tone-bg));
-        box-shadow: inset 0 0 0 2px var(--neutral);
+        background: var(--dot-bg, var(--spk-tone-bg));
+        box-shadow: inset 0 0 0 2px var(--spk-neutral);
     }
 </style>

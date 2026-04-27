@@ -5,7 +5,7 @@ export const footerConfig = {
 
     variants: {
         // Colour palette mode.
-        // accent → background: --accent (default, matches layout footer)
+        // accent → background: --spk-accent (default, matches layout footer)
         // tone   → background: --card
         palette: {
             accent: "footer-palette-accent",

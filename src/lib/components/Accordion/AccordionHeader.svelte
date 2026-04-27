@@ -92,7 +92,7 @@
         background: transparent;
         border: none;
         cursor: pointer;
-        color: var(--acc-text, var(--text));
+        color: var(--acc-text, var(--spk-text));
         font-family: inherit;
         font-size: var(--acc-font-size, 0.875rem);
         font-weight: 600;
@@ -109,14 +109,14 @@
 
     .accordion-header-btn:focus { outline: none; }
     .accordion-header-btn:focus-visible {
-        outline: var(--focus-ring-width) solid var(--focus-ring);
-        outline-offset: calc(var(--focus-ring-offset) * -1);
+        outline: var(--spk-focus-ring-width) solid var(--spk-focus-ring);
+        outline-offset: calc(var(--spk-focus-ring-offset) * -1);
     }
 
     /* Flat variant: header gets palette color */
     :global(.accordion-flat) .accordion-header-btn {
-        background: var(--acc-header-flat, var(--tone-hover));
-        color: var(--acc-header-flat-text, var(--text));
+        background: var(--acc-header-flat, var(--spk-tone-hover));
+        color: var(--acc-header-flat-text, var(--spk-text));
     }
 
     :global(.accordion-flat) .accordion-header-btn:hover {
@@ -134,12 +134,12 @@
     }
 
     :global(.accordion-outlined) .accordion-header {
-        border: var(--spk-border) solid var(--acc-border, var(--tone-hover));
+        border: var(--spk-border) solid var(--acc-border, var(--spk-tone-hover));
     }
 
     :global(.accordion-outlined) .accordion-header-btn:hover,
     :global(.accordion-ghost) .accordion-header-btn:hover {
-        background: var(--tone-hover);
+        background: var(--spk-tone-hover);
     }
 
 
@@ -211,11 +211,11 @@
         padding: var(--acc-item-padding, 0.75rem 1rem);
         font-size: var(--acc-font-size, 0.875rem);
         line-height: 1.6;
-        color: var(--text);
+        color: var(--spk-text);
     }
 
     /* Flat variant: item gets tone background */
     :global(.accordion-flat) .accordion-item {
-        background: var(--tone);
+        background: var(--spk-tone);
     }
 </style>

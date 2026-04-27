@@ -64,7 +64,7 @@ import LogoSpektral from "./LogoSpektral.svelte";
     }
 
     .support-container:hover {
-        background: var(--accent-ghost-hover);
+        background: var(--spk-accent-ghost-hover);
     }
 
     .support-name {
@@ -72,7 +72,7 @@ import LogoSpektral from "./LogoSpektral.svelte";
         flex-direction: column;
         text-align: start;
         font-weight: 700;
-        font-family: var(--font-heading);
+        font-family: var(--spk-font-heading);
         line-height: 1.1;
     }
 
@@ -90,17 +90,17 @@ import LogoSpektral from "./LogoSpektral.svelte";
 
     .fill-accent span,
     .fill-accent {
-        color: var(--accent);
+        color: var(--spk-accent);
     }
 
     .fill-text-accent span,
     .fill-text-accent {
-        color: var(--text-accent);
+        color: var(--spk-text-accent);
     }
 
     .fill-text span,
     .fill-text {
-        color: var(--text);
+        color: var(--spk-text);
     }
 
     .logo-container {
@@ -116,15 +116,15 @@ import LogoSpektral from "./LogoSpektral.svelte";
        mixed with a high-contrast partner (bg for text, accent for text-accent)
        to guarantee a visible step between main / hover / muted. */
     .logo-container.fill-text {
-        --logo-main:  var(--text);
-        --logo-hover: color-mix(in oklch, var(--text) 80%, var(--tone) 100%);
-        --logo-muted: color-mix(in oklch, var(--text) 30%, var(--tone-muted) 70%);
+        --logo-main:  var(--spk-text);
+        --logo-hover: color-mix(in oklch, var(--spk-text) 80%, var(--spk-tone) 100%);
+        --logo-muted: color-mix(in oklch, var(--spk-text) 30%, var(--spk-tone-muted) 70%);
     }
 
     .logo-container.fill-text-accent {
-        --logo-main:  var(--text-accent);
-        --logo-hover: color-mix(in oklch, var(--text-accent) 80%, var(--tone) 100%);
-        --logo-muted: color-mix(in oklch, var(--text-accent) 30%, var(--tone-muted) 70%);
+        --logo-main:  var(--spk-text-accent);
+        --logo-hover: color-mix(in oklch, var(--spk-text-accent) 80%, var(--spk-tone) 100%);
+        --logo-muted: color-mix(in oklch, var(--spk-text-accent) 30%, var(--spk-tone-muted) 70%);
     }
 
 

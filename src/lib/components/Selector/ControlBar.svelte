@@ -56,8 +56,8 @@
     /* Header - separator only, no box border */
     .control-header {
         padding-bottom: 0.6rem;
-        border-bottom:  var(--spk-border) solid var(--tone-hover);
-        color: var(--text);
+        border-bottom:  var(--spk-border) solid var(--spk-tone-hover);
+        color: var(--spk-text);
     }
 
     .control-body {
@@ -69,65 +69,65 @@
     /* Palette - tone -------------------------------------------------- */
 
     .control-palette-tone {
-        background: var(--tone);
+        background: var(--spk-tone);
 
-        --sel-label-color: var(--text-muted);
-        --sel-btn-color: var(--text-muted);
-        --sel-btn-border: var(--tone-hover);
-        --sel-btn-hover-color: var(--accent);
-        --sel-btn-active-bg: var(--accent);
-        --sel-btn-active-border: var(--accent);
-        --sel-btn-active-color: var(--text-accent);
+        --sel-label-color: var(--spk-text-muted);
+        --sel-btn-color: var(--spk-text-muted);
+        --sel-btn-border: var(--spk-tone-hover);
+        --sel-btn-hover-color: var(--spk-accent);
+        --sel-btn-active-bg: var(--spk-accent);
+        --sel-btn-active-border: var(--spk-accent);
+        --sel-btn-active-color: var(--spk-text-accent);
     }
 
     .control-palette-tone.control-bordered {
-        border-color: var(--tone-hover);
+        border-color: var(--spk-tone-hover);
     }
 
     /* Palette - accent ------------------------------------------------ */
 
     .control-palette-accent {
-        background: var(--accent);
+        background: var(--spk-accent);
 
-        --sel-label-color: var(--text-accent);
-        --sel-btn-color: var(--accent-muted);
-        --sel-btn-border: var(--accent-hover);
-        --sel-btn-hover-color: var(--text-accent);
-        --sel-btn-active-bg: var(--accent-ghost-hover);
-        --sel-btn-active-border: var(--text-accent);
-        --sel-btn-active-color: var(--text-accent);
+        --sel-label-color: var(--spk-text-accent);
+        --sel-btn-color: var(--spk-accent-muted);
+        --sel-btn-border: var(--spk-accent-hover);
+        --sel-btn-hover-color: var(--spk-text-accent);
+        --sel-btn-active-bg: var(--spk-accent-ghost-hover);
+        --sel-btn-active-border: var(--spk-text-accent);
+        --sel-btn-active-color: var(--spk-text-accent);
     }
 
     .control-palette-accent.control-bordered {
-        border-color: var(--accent-muted);
+        border-color: var(--spk-accent-muted);
     }
 
     .control-palette-accent .control-header {
-        color: var(--text-accent);
-        border-bottom-color: var(--accent-muted);
+        color: var(--spk-text-accent);
+        border-bottom-color: var(--spk-accent-muted);
     }
 
     /* Palette - accent-bg --------------------------------------------- */
 
     .control-palette-accent-bg {
-        background: var(--accent-bg);
+        background: var(--spk-accent-bg);
 
-        --sel-label-color: var(--text-accent);
-        --sel-btn-color: var(--accent-muted);
-        --sel-btn-border: var(--accent-hover);
-        --sel-btn-hover-color: var(--text-accent);
-        --sel-btn-active-bg: var(--accent-ghost-hover);
-        --sel-btn-active-border: var(--text-accent);
-        --sel-btn-active-color: var(--text-accent);
+        --sel-label-color: var(--spk-text-accent);
+        --sel-btn-color: var(--spk-accent-muted);
+        --sel-btn-border: var(--spk-accent-hover);
+        --sel-btn-hover-color: var(--spk-text-accent);
+        --sel-btn-active-bg: var(--spk-accent-ghost-hover);
+        --sel-btn-active-border: var(--spk-text-accent);
+        --sel-btn-active-color: var(--spk-text-accent);
     }
 
     .control-palette-accent-bg.control-bordered {
-        border-color: var(--accent-hover);
+        border-color: var(--spk-accent-hover);
     }
 
     .control-palette-accent-bg .control-header {
-        color: var(--text-accent);
-        border-bottom-color: var(--accent-hover);
+        color: var(--spk-text-accent);
+        border-bottom-color: var(--spk-accent-hover);
     }
 
 </style>

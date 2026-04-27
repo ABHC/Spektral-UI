@@ -106,34 +106,34 @@
         width: 100%;
         border-collapse: separate;
         border-spacing: 0;
-        font-family: var(--font-body);
-        color: var(--text);
+        font-family: var(--spk-font-body);
+        color: var(--spk-text);
     }
 
     /* Palette ------------------------------------------------------------ */
 
     .data-table-palette-accent {
-        --dt-border: var(--accent);
-        --dt-header-bg: var(--accent);
-        --dt-header-text: var(--text-accent);
-        --dt-row-bg: var(--accent-bg);
-        --dt-hover: var(--tone-ghost-hover);
+        --dt-border: var(--spk-accent);
+        --dt-header-bg: var(--spk-accent);
+        --dt-header-text: var(--spk-text-accent);
+        --dt-row-bg: var(--spk-accent-bg);
+        --dt-hover: var(--spk-tone-ghost-hover);
     }
 
     .data-table-palette-tone {
-        --dt-border: var(--tone-hover);
-        --dt-header-bg: var(--tone-hover);
-        --dt-header-text: var(--text);
-        --dt-row-bg: var(--tone);
-        --dt-hover: var(--tone-ghost-hover);
+        --dt-border: var(--spk-tone-hover);
+        --dt-header-bg: var(--spk-tone-hover);
+        --dt-header-text: var(--spk-text);
+        --dt-row-bg: var(--spk-tone);
+        --dt-hover: var(--spk-tone-ghost-hover);
     }
 
     .data-table-palette-neutral {
-        --dt-border: var(--neutral);
-        --dt-header-bg: var(--neutral);
-        --dt-header-text: var(--text-neutral);
-        --dt-row-bg: var(--neutral-bg);
-        --dt-hover: var(--tone-ghost-hover);
+        --dt-border: var(--spk-neutral);
+        --dt-header-bg: var(--spk-neutral);
+        --dt-header-text: var(--spk-text-neutral);
+        --dt-row-bg: var(--spk-neutral-bg);
+        --dt-hover: var(--spk-tone-ghost-hover);
     }
 
     /* Variants ----------------------------------------------------------- */
@@ -163,7 +163,7 @@
 
     .data-table-ghost th {
         border-bottom: var(--spk-border) solid var(--dt-border);
-        color: var(--text-muted);
+        color: var(--spk-text-muted);
     }
 
     .data-table-ghost td {
@@ -195,7 +195,7 @@
     th {
         text-align: left;
         font-weight: 700;
-        font-family: var(--font-heading);
+        font-family: var(--spk-font-heading);
         text-transform: uppercase;
         font-size: 0.75em;
         letter-spacing: 0.5px;
@@ -215,11 +215,11 @@
     /* Elevation ---------------------------------------------------------- */
 
     .data-table-elevation-subtle {
-        box-shadow: var(--spk-elevation-subtle) var(--shadow-subtle);
+        box-shadow: var(--spk-elevation-subtle) var(--spk-shadow-subtle);
     }
 
     .data-table-elevation-hard {
-        box-shadow: var(--spk-elevation-hard) var(--shadow-hard);
+        box-shadow: var(--spk-elevation-hard) var(--spk-shadow-hard);
     }
 
     /* Hover -------------------------------------------------------------- */
@@ -271,11 +271,11 @@
 
         .data-table-card-label {
             font-weight: 700;
-            font-family: var(--font-heading);
+            font-family: var(--spk-font-heading);
             text-transform: uppercase;
             font-size: 0.7em;
             letter-spacing: 0.5px;
-            color: var(--text-muted);
+            color: var(--spk-text-muted);
             flex-shrink: 0;
         }
 

@@ -197,12 +197,12 @@
     .input-label {
         font-size: 0.85rem;
         font-weight: 600;
-        color: var(--text);
+        color: var(--spk-text);
         line-height: 1.3;
     }
 
     .input-required {
-        color: var(--error);
+        color: var(--spk-error);
     }
 
     /* Field wrapper --------------------------------------------------- */
@@ -210,16 +210,16 @@
     .input-field {
         display: flex;
         align-items: center;
-        background: var(--tone);
-        border: var(--spk-border) solid var(--tone-hover);
+        background: var(--spk-tone);
+        border: var(--spk-border) solid var(--spk-tone-hover);
         border-radius: var(--spk-radius-edge);
         overflow: hidden;
         transition: border-color var(--spk-duration-quick) ease, box-shadow var(--spk-duration-quick) ease;
     }
 
     .input-field:focus-within {
-        border-color: var(--accent-muted);
-        box-shadow: 0 0 0 3px var(--accent-ghost-hover);
+        border-color: var(--spk-accent-muted);
+        box-shadow: 0 0 0 3px var(--spk-accent-ghost-hover);
     }
 
     /* Native input ---------------------------------------------------- */
@@ -229,14 +229,14 @@
         background: transparent;
         border: none;
         outline: none;
-        color: var(--text);
-        font-family: var(--font-body);
+        color: var(--spk-text);
+        font-family: var(--spk-font-body);
         width: 100%;
         min-width: 0;
     }
 
     .input-element::placeholder {
-        color: var(--text-muted);
+        color: var(--spk-text-muted);
         opacity: var(--spk-opacity-muted);
     }
 
@@ -244,9 +244,9 @@
     .input-element:-webkit-autofill:hover,
     .input-element:-webkit-autofill:focus,
     .input-element:-webkit-autofill:active {
-        -webkit-box-shadow: 0 0 0 100px var(--tone) inset !important;
-        -webkit-text-fill-color: var(--text) !important;
-        caret-color: var(--text);
+        -webkit-box-shadow: 0 0 0 100px var(--spk-tone) inset !important;
+        -webkit-text-fill-color: var(--spk-text) !important;
+        caret-color: var(--spk-text);
     }
 
     /* Addons ---------------------------------------------------------- */
@@ -254,7 +254,7 @@
     .input-addon {
         display: flex;
         align-items: center;
-        color: var(--text-muted);
+        color: var(--spk-text-muted);
         flex-shrink: 0;
         pointer-events: none;
     }
@@ -265,12 +265,12 @@
         border: none;
         cursor: pointer;
         padding: 0;
-        color: var(--text-muted);
+        color: var(--spk-text-muted);
         transition: color var(--spk-duration-quick) ease;
     }
 
     .input-pw-toggle:hover {
-        color: var(--text);
+        color: var(--spk-text);
     }
 
     .input-pw-toggle svg {
@@ -283,16 +283,16 @@
 
     .input-message {
         font-size: 0.75rem;
-        color: var(--text-muted);
+        color: var(--spk-text-muted);
         line-height: 1.4;
     }
 
     .input-message-error {
-        color: var(--error);
+        color: var(--spk-error);
     }
 
     .input-message-success {
-        color: var(--success);
+        color: var(--spk-success);
     }
 
     /* Sizes ----------------------------------------------------------- */
@@ -370,19 +370,19 @@
     /* Validation states ----------------------------------------------- */
 
     .input-has-error .input-field {
-        border-color: var(--error);
+        border-color: var(--spk-error);
     }
     .input-has-error .input-field:focus-within {
-        border-color: var(--error);
-        box-shadow: 0 0 0 3px var(--error-ghost-hover);
+        border-color: var(--spk-error);
+        box-shadow: 0 0 0 3px var(--spk-error-ghost-hover);
     }
 
     .input-has-success .input-field {
-        border-color: var(--success);
+        border-color: var(--spk-success);
     }
     .input-has-success .input-field:focus-within {
-        border-color: var(--success);
-        box-shadow: 0 0 0 3px var(--success-ghost-hover);
+        border-color: var(--spk-success);
+        box-shadow: 0 0 0 3px var(--spk-success-ghost-hover);
     }
 
     /* Number spinners ------------------------------------------------- */
@@ -403,15 +403,15 @@
         background: none;
         border: none;
         cursor: pointer;
-        color: var(--text-muted);
+        color: var(--spk-text-muted);
         padding: 0.2rem 0.4rem;
         transition: background var(--spk-duration-quick) ease, color var(--spk-duration-quick) ease;
         line-height: 0;
     }
 
     .input-spinner:hover {
-        background: var(--tone-hover);
-        color: var(--text);
+        background: var(--spk-tone-hover);
+        color: var(--spk-text);
     }
 
     .input-spinner svg {

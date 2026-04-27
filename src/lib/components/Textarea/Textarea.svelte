@@ -102,28 +102,28 @@
     .textarea-label {
         font-size: 0.85rem;
         font-weight: 600;
-        color: var(--text);
+        color: var(--spk-text);
         line-height: 1.3;
     }
 
     .input-required {
-        color: var(--error);
+        color: var(--spk-error);
     }
 
     /* Field wrapper --------------------------------------------------- */
 
     .field-wrapper {
         display: flex;
-        background: var(--tone);
-        border: var(--spk-border) solid var(--tone-hover);
+        background: var(--spk-tone);
+        border: var(--spk-border) solid var(--spk-tone-hover);
         border-radius: var(--spk-radius-edge);
         overflow: hidden;
         transition: border-color var(--spk-duration-quick) ease, box-shadow var(--spk-duration-quick) ease;
     }
 
     .field-wrapper:focus-within {
-        border-color: var(--accent-muted);
-        box-shadow: 0 0 0 3px var(--accent-ghost-hover);
+        border-color: var(--spk-accent-muted);
+        box-shadow: 0 0 0 3px var(--spk-accent-ghost-hover);
     }
 
     /* Textarea -------------------------------------------------------- */
@@ -133,8 +133,8 @@
         background: transparent;
         border: none;
         outline: none;
-        color: var(--text);
-        font-family: var(--font-body);
+        color: var(--spk-text);
+        font-family: var(--spk-font-body);
         width: 100%;
         min-width: 0;
         min-height: 80px;
@@ -142,7 +142,7 @@
     }
 
     .textarea-field::placeholder {
-        color: var(--text-muted);
+        color: var(--spk-text-muted);
         opacity: var(--spk-opacity-muted);
     }
 
@@ -150,16 +150,16 @@
 
     .textarea-message {
         font-size: 0.75rem;
-        color: var(--text-muted);
+        color: var(--spk-text-muted);
         line-height: 1.4;
     }
 
     .textarea-message-error { 
-        color: var(--error); 
+        color: var(--spk-error); 
     }
     
     .textarea-message-success { 
-        color: var(--success); 
+        color: var(--spk-success); 
     }
 
     /* Sizes ----------------------------------------------------------- */
@@ -202,19 +202,19 @@
     /* Validation states ----------------------------------------------- */
 
     .textarea-has-error .field-wrapper {
-        border-color: var(--error);
+        border-color: var(--spk-error);
     }
     .textarea-has-error .field-wrapper:focus-within {
-        border-color: var(--error);
-        box-shadow: 0 0 0 3px var(--error-ghost-hover);
+        border-color: var(--spk-error);
+        box-shadow: 0 0 0 3px var(--spk-error-ghost-hover);
     }
 
     .textarea-has-success .field-wrapper {
-        border-color: var(--success);
+        border-color: var(--spk-success);
     }
     .textarea-has-success .field-wrapper:focus-within {
-        border-color: var(--success);
-        box-shadow: 0 0 0 3px var(--success-ghost-hover);
+        border-color: var(--spk-success);
+        box-shadow: 0 0 0 3px var(--spk-success-ghost-hover);
     }
 
     /* Disabled -------------------------------------------------------- */

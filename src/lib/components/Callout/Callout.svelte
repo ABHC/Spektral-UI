@@ -67,8 +67,8 @@
         padding: 0.9rem 1.1rem;
         background: var(--cb-bg);
         border: var(--spk-border) solid transparent;
-        color: var(--text);
-        font-family: var(--font-body);
+        color: var(--spk-text);
+        font-family: var(--spk-font-body);
     }
 
     /* Rounded */
@@ -85,52 +85,52 @@
 
     /* Variants - set --cb-color, --cb-bg, --cb-border */
     .callout-variant-accent { 
-        --cb-color: var(--accent); 
-        --cb-bg: var(--accent-bg); 
-        --cb-muted: var(--accent-muted);
-        --cb-hover: var(--accent-hover);
-        --cb-ghost: var(--accent-ghost-hover);
+        --cb-color: var(--spk-accent); 
+        --cb-bg: var(--spk-accent-bg); 
+        --cb-muted: var(--spk-accent-muted);
+        --cb-hover: var(--spk-accent-hover);
+        --cb-ghost: var(--spk-accent-ghost-hover);
     }
     .callout-variant-neutral { 
-        --cb-color: var(--neutral); 
-        --cb-bg: var(--neutral-bg); 
-        --cb-muted: var(--neutral-muted);
-        --cb-hover: var(--neutral-hover);
-        --cb-ghost: var(--neutral-ghost-hover);
-        --cb-text: var(--text-neutral);  
+        --cb-color: var(--spk-neutral); 
+        --cb-bg: var(--spk-neutral-bg); 
+        --cb-muted: var(--spk-neutral-muted);
+        --cb-hover: var(--spk-neutral-hover);
+        --cb-ghost: var(--spk-neutral-ghost-hover);
+        --cb-text: var(--spk-text-neutral);  
     }
 
     .callout-variant-error { 
-        --cb-color: var(--error); 
-        --cb-bg: var(--error-bg); 
-        --cb-muted: var(--error-muted);
-        --cb-hover: var(--error-hover);
-        --cb-ghost: var(--error-ghost-hover);
+        --cb-color: var(--spk-error); 
+        --cb-bg: var(--spk-error-bg); 
+        --cb-muted: var(--spk-error-muted);
+        --cb-hover: var(--spk-error-hover);
+        --cb-ghost: var(--spk-error-ghost-hover);
     }
 
     .callout-variant-warning { 
-        --cb-color: var(--warning); 
-        --cb-bg: var(--warning-bg); 
-        --cb-muted: var(--warning-muted);
-        --cb-hover: var(--warning-hover);
-        --cb-ghost: var(--warning-ghost-hover);
-        --cb-text: var(--text-warning);  
+        --cb-color: var(--spk-warning); 
+        --cb-bg: var(--spk-warning-bg); 
+        --cb-muted: var(--spk-warning-muted);
+        --cb-hover: var(--spk-warning-hover);
+        --cb-ghost: var(--spk-warning-ghost-hover);
+        --cb-text: var(--spk-text-warning);  
     }
 
     .callout-variant-success { 
-        --cb-color: var(--success); 
-        --cb-bg: var(--success-bg); 
-        --cb-muted: var(--success-muted);
-        --cb-hover: var(--success-hover);
-        --cb-ghost: var(--success-ghost-hover);
+        --cb-color: var(--spk-success); 
+        --cb-bg: var(--spk-success-bg); 
+        --cb-muted: var(--spk-success-muted);
+        --cb-hover: var(--spk-success-hover);
+        --cb-ghost: var(--spk-success-ghost-hover);
     }
 
     .callout-variant-info { 
-        --cb-color: var(--info); 
-        --cb-bg: var(--info-bg); 
-        --cb-muted: var(--info-muted);
-        --cb-hover: var(--info-hover);
-        --cb-ghost: var(--info-ghost-hover);
+        --cb-color: var(--spk-info); 
+        --cb-bg: var(--spk-info-bg); 
+        --cb-muted: var(--spk-info-muted);
+        --cb-hover: var(--spk-info-hover);
+        --cb-ghost: var(--spk-info-ghost-hover);
     }
 
     /* Slots */
@@ -175,7 +175,7 @@
         font-size: 0.85em;
         font-family: monospace;
         font-weight: 600;
-        color: var(--text);
+        color: var(--spk-text);
         background: var(--cb-ghost);
         padding: 0.1em 0.35em;
         border-radius: var(--spk-radius-edge);

@@ -343,7 +343,7 @@
     /* Base */
     .codeblock {
         border-radius: var(--spk-radius-soft);
-        border: var(--spk-border) solid var(--tone-hover);
+        border: var(--spk-border) solid var(--spk-tone-hover);
         overflow: hidden;
         position: relative;
         margin: 20px 0;
@@ -356,8 +356,8 @@
         justify-content: space-between;
         gap: 0.5rem;
         padding: 0 1rem;
-        background: var(--tone);
-        border-bottom: var(--spk-border-thin) solid var(--tone-hover);
+        background: var(--spk-tone);
+        border-bottom: var(--spk-border-thin) solid var(--spk-tone-hover);
         min-height: 2.75rem;
     }
 
@@ -382,32 +382,32 @@
         font-family: monospace;
         font-weight: 700;
         font-size: 0.9rem;
-        color: var(--accent);
+        color: var(--spk-accent);
         flex-shrink: 0;
         user-select: none;
         padding: 1px 4px 2px 6px;
         border-radius: var(--spk-radius-edge);
-        border: var(--spk-border) solid var(--accent);
+        border: var(--spk-border) solid var(--spk-accent);
     }
 
     .codeblock-terminal-title {
         font-family: monospace;
         font-size: 0.875rem;
-        color: var(--text-muted);
+        color: var(--spk-text-muted);
     }
 
     /* Title */
     .codeblock-title {
-        font-family: var(--font-heading);
+        font-family: var(--spk-font-heading);
         font-weight: 600;
         font-size: 0.875rem;
-        color: var(--text);
+        color: var(--spk-text);
     }
 
     /* Filename */
     .codeblock-filename {
         font-size: 0.875rem;
-        color: var(--text-muted);
+        color: var(--spk-text-muted);
         font-family: monospace;
     }
 
@@ -425,21 +425,21 @@
         background: transparent;
         border: none;
         border-bottom: var(--spk-border) solid transparent;
-        color: var(--text-muted);
+        color: var(--spk-text-muted);
         font-size: 0.875rem;
-        font-family: var(--font-body);
+        font-family: var(--spk-font-body);
         cursor: pointer;
         transition: color var(--spk-duration-base) ease, border-color var(--spk-duration-base) ease;
         white-space: nowrap;
     }
 
     .codeblock-tab:hover {
-        color: var(--text);
+        color: var(--spk-text);
     }
 
     .codeblock-tab.is-active {
-        color: var(--accent);
-        border-bottom-color: var(--accent);
+        color: var(--spk-accent);
+        border-bottom-color: var(--spk-accent);
         font-weight: 600;
     }
 
@@ -448,12 +448,12 @@
         font-size: 0.7rem;
         padding: 0.3rem 0.6rem;
         border-radius: var(--spk-radius-edge);
-        background: var(--tone-hover);
-        color: var(--text-muted);
+        background: var(--spk-tone-hover);
+        color: var(--spk-text-muted);
         text-transform: uppercase;
         letter-spacing: 0.6px;
         font-weight: 700;
-        font-family: var(--font-body);
+        font-family: var(--spk-font-body);
     }
 
     /* Copy button - "simple" variant: flex row, code left, button right */
@@ -475,7 +475,7 @@
     /* Code body */
     .codeblock-body {
         position: relative;
-        background: var(--tone-bg);
+        background: var(--spk-tone-bg);
     }
 
     /* Split layout: description panel on the left, code on the right */
@@ -486,12 +486,12 @@
 
     .codeblock-description {
         padding: 1.25rem 1.5rem;
-        background: var(--tone);
-        border-right: var(--spk-border-thin) solid var(--tone-hover);
-        color: var(--text-muted);
+        background: var(--spk-tone);
+        border-right: var(--spk-border-thin) solid var(--spk-tone-hover);
+        color: var(--spk-text-muted);
         font-size: 0.875rem;
         line-height: 1.7;
-        font-family: var(--font-body);
+        font-family: var(--spk-font-body);
     }
 
     /* Description-only: takes full width, no right border */
@@ -503,10 +503,10 @@
     :global(.codeblock-desc-inline) {
         font-family: monospace;
         font-size: 0.8em;
-        background: var(--tone-hover);
+        background: var(--spk-tone-hover);
         padding: 0.1em 0.35em;
         border-radius: var(--spk-radius-edge);
-        color: var(--text);
+        color: var(--spk-text);
     }
 
     .codeblock-pre {
@@ -518,7 +518,7 @@
     .codeblock-code {
         font-family: monospace;
         font-size: 0.875rem;
-        color: var(--text);
+        color: var(--spk-text);
         line-height: 1.7;
     }
 
@@ -540,12 +540,12 @@
         left: 0;
         width: 2rem;
         text-align: right;
-        color: var(--text-muted);
+        color: var(--spk-text-muted);
         user-select: none;
         opacity: var(--spk-opacity-faded);
         font-size: 0.8em;
         padding-right: 0.5rem;
-        border-right: var(--spk-border-thin) solid var(--tone-hover);
+        border-right: var(--spk-border-thin) solid var(--spk-tone-hover);
     }
 
     /* Sizes */

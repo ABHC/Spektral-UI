@@ -163,7 +163,7 @@
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.1em;
-        font-family: var(--font-heading, inherit);
+        font-family: var(--spk-font-heading, inherit);
         flex: 1;
     }
 

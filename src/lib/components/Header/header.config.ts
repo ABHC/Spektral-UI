@@ -6,8 +6,8 @@ export const headerConfig = {
 
     variants: {
         // Colour palette mode.
-        // accent → background: --accent, buttons inherit --text-accent
-        // tone → background: --card, buttons inherit --text
+        // accent → background: --spk-accent, buttons inherit --spk-text-accent
+        // tone → background: --card, buttons inherit --spk-text
         palette: {
             accent: "header-palette-accent",
             tone: "header-palette-tone",

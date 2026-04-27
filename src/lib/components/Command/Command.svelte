@@ -196,7 +196,7 @@
     .command-empty {
         padding: 2rem 1rem;
         text-align: center;
-        color: var(--text-muted);
+        color: var(--spk-text-muted);
         font-size: 0.9rem;
     }
 
@@ -207,7 +207,7 @@
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.5px;
-        color: var(--text-muted);
+        color: var(--spk-text-muted);
         padding: 0.75rem 0.75rem 0.35rem;
     }
 
@@ -227,7 +227,7 @@
         border: none;
         border-radius: var(--spk-radius-edge);
         color: var(--cmd-txt);
-        font-family: var(--font-body);
+        font-family: var(--spk-font-body);
         font-size: 0.9rem;
         padding: 0.55rem 0.75rem;
         cursor: pointer;
@@ -238,7 +238,7 @@
 
     .command-item:hover,
     .command-item-active {
-        background: var(--accent-ghost-hover);
+        background: var(--spk-accent-ghost-hover);
     }
 
     .command-item-label {
@@ -248,7 +248,7 @@
 
     .command-item-hint {
         font-size: 0.75rem;
-        color: var(--text-muted);
+        color: var(--spk-text-muted);
         flex-shrink: 0;
         font-weight: 500;
     }
@@ -256,15 +256,15 @@
     /* Palettes --------------------------------------------------------- */
 
     .command-tone {
-        --cmd-txt:var(--text);
+        --cmd-txt:var(--spk-text);
     }
 
     .command-accent {
-        --cmd-txt:var(--text-accent);
+        --cmd-txt:var(--spk-text-accent);
     }
 
     .command-accentbg {
-        --cmd-txt:var(--text);
+        --cmd-txt:var(--spk-text);
     }
 
 

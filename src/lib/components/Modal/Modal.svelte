@@ -8,7 +8,7 @@
     /*
         open : Controls visibility.
         onclose : Called on scrim click or Escape key.
-        palette : tone (--card bg) | accent (--accent bg). Default: tone.
+        palette : tone (--card bg) | accent (--spk-accent bg). Default: tone.
         rounded : Border-radius. Default: true.
         width : CSS width of the dialog. Default: "480px".
                 Max-width is always capped at calc(100vw - 2rem).
@@ -203,26 +203,26 @@
 
     /* tone */
     .modal-palette-tone {
-        background: var(--tone);
-        color: var(--text);
-        --modal-border: var(--tone-hover);
-        --modal-muted:  var(--text-muted);
+        background: var(--spk-tone);
+        color: var(--spk-text);
+        --modal-border: var(--spk-tone-hover);
+        --modal-muted:  var(--spk-text-muted);
     }
 
     /* accent */
     .modal-palette-accent {
-        background: var(--accent);
-        color: var(--text-accent);
-        --modal-border: var(--accent-hover);
-        --modal-muted: var(--text-accent);
+        background: var(--spk-accent);
+        color: var(--spk-text-accent);
+        --modal-border: var(--spk-accent-hover);
+        --modal-muted: var(--spk-text-accent);
     }
 
     /* accentbg */
     .modal-palette-accentbg {
-        background: var(--accent-bg);
-        color: var(--text-accent);
-        --modal-border: var(--accent-muted);
-        --modal-muted: var(--text-accent);
+        background: var(--spk-accent-bg);
+        color: var(--spk-text-accent);
+        --modal-border: var(--spk-accent-muted);
+        --modal-muted: var(--spk-text-accent);
     }
 
     /* Rounded -------------------------------------------------------------- */
@@ -236,11 +236,11 @@
     }
 
     .modal-elevation-subtle {
-        box-shadow: var(--spk-elevation-subtle) var(--shadow-subtle);
+        box-shadow: var(--spk-elevation-subtle) var(--spk-shadow-subtle);
     }
 
     .modal-elevation-hard {
-        box-shadow: var(--spk-elevation-hard) var(--shadow-hard);
+        box-shadow: var(--spk-elevation-hard) var(--spk-shadow-hard);
     }
 
     /* Header -------------------------------------------------------------- */

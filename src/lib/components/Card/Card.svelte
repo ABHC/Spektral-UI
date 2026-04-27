@@ -84,25 +84,25 @@
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
-        color: var(--text);
+        color: var(--spk-text);
         text-decoration: none; /* reset if <a> */
     }
 
     a.card:focus { outline: none; }
     a.card:focus-visible {
-        outline: var(--focus-ring-width) solid var(--focus-ring);
-        outline-offset: var(--focus-ring-offset);
+        outline: var(--spk-focus-ring-width) solid var(--spk-focus-ring);
+        outline-offset: var(--spk-focus-ring-offset);
     }
 
     /* Variants ------------------------------------------------------------- */
 
     .card-flat {
-        background: var(--tone);
+        background: var(--spk-tone);
     }
 
     .card-outlined {
         background: transparent;
-        border: var(--spk-border) solid var(--tone-hover);
+        border: var(--spk-border) solid var(--spk-tone-hover);
     }
 
     .card-ghost {
@@ -122,18 +122,18 @@
     }
 
     .card-elevation-subtle {
-        box-shadow: var(--spk-elevation-subtle) var(--shadow-subtle);
+        box-shadow: var(--spk-elevation-subtle) var(--spk-shadow-subtle);
     }
 
     .card-elevation-hard {
-        box-shadow: var(--spk-elevation-hard) var(--shadow-hard);
+        box-shadow: var(--spk-elevation-hard) var(--spk-shadow-hard);
         transition: box-shadow var(--spk-duration-quick) ease, transform var(--spk-duration-quick) ease;
     }
 
     /* Hover - link cards only ---------------------------------------------- */
 
     a.card-outlined:hover {
-        border-color: var(--accent);
+        border-color: var(--spk-accent);
         transition: border-color var(--spk-duration-base) ease;
     }
 
@@ -142,7 +142,7 @@
     .card-leading {
         flex-shrink: 0;
         overflow: hidden;
-        border-bottom: var(--spk-border) solid var(--tone-hover);
+        border-bottom: var(--spk-border) solid var(--spk-tone-hover);
     }
 
     /* Rounded top corners on the header (ex: if pics included) */
@@ -161,6 +161,6 @@
     .card-trailing {
         flex-shrink: 0;
         overflow: hidden;
-        border-top: var(--spk-border) solid var(--tone-hover);
+        border-top: var(--spk-border) solid var(--spk-tone-hover);
     }
 </style>

@@ -132,7 +132,7 @@
         justify-content: center;
         gap: 0.4rem;
         line-height: 1;
-        font-family: var(--font-body);
+        font-family: var(--spk-font-body);
         text-decoration: none;
         border: var(--spk-border) solid transparent;
     }
@@ -165,96 +165,96 @@
 
     /* accent */
     .badge-palette-accent.badge-flat {
-        background: var(--accent);
-        border-color: var(--accent);
-        color: var(--text-accent);
+        background: var(--spk-accent);
+        border-color: var(--spk-accent);
+        color: var(--spk-text-accent);
     }
 
     .badge-palette-accent.badge-outlined {
-        border-color: var(--accent-muted);
-        color: var(--accent-muted);
+        border-color: var(--spk-accent-muted);
+        color: var(--spk-accent-muted);
     }
 
     /* tone */
     .badge-palette-tone.badge-flat {
-        background: var(--tone);
-        border-color: var(--tone);
-        color: var(--text);
+        background: var(--spk-tone);
+        border-color: var(--spk-tone);
+        color: var(--spk-text);
     }
 
     .badge-palette-tone.badge-outlined {
-        border-color: var(--tone-muted);
-        color: var(--text-muted);
+        border-color: var(--spk-tone-muted);
+        color: var(--spk-text-muted);
     }
 
     /* error */
     .badge-palette-error.badge-flat {
-        background: var(--error);
-        border-color: var(--error);
-        color: var(--text-error);
+        background: var(--spk-error);
+        border-color: var(--spk-error);
+        color: var(--spk-text-error);
     }
 
     .badge-palette-error.badge-outlined {
-        border-color: var(--error-muted);
-        color: var(--error-muted);
+        border-color: var(--spk-error-muted);
+        color: var(--spk-error-muted);
     }
 
     /* warning */
     .badge-palette-warning.badge-flat {
-        background: var(--warning);
-        border-color: var(--warning);
-        color: var(--text-warning);
+        background: var(--spk-warning);
+        border-color: var(--spk-warning);
+        color: var(--spk-text-warning);
     }
 
     .badge-palette-warning.badge-outlined {
-        border-color: var(--warning-muted);
-        color: var(--warning-muted);
+        border-color: var(--spk-warning-muted);
+        color: var(--spk-warning-muted);
     }
 
     /* success */
     .badge-palette-success.badge-flat {
-        background: var(--success);
-        border-color: var(--success);
-        color: var(--text-success);
+        background: var(--spk-success);
+        border-color: var(--spk-success);
+        color: var(--spk-text-success);
     }
 
     .badge-palette-success.badge-outlined {
-        border-color: var(--success-muted);
-        color: var(--success-muted);
+        border-color: var(--spk-success-muted);
+        color: var(--spk-success-muted);
     }
 
     /* info */
     .badge-palette-info.badge-flat {
-        background: var(--info);
-        border-color: var(--info);
-        color: var(--text-info);
+        background: var(--spk-info);
+        border-color: var(--spk-info);
+        color: var(--spk-text-info);
     }
 
     .badge-palette-info.badge-outlined {
-        border-color: var(--info-muted);
-        color: var(--info-muted);
+        border-color: var(--spk-info-muted);
+        color: var(--spk-info-muted);
     }
 
     /* neutral */
     .badge-palette-neutral.badge-flat {
-        background: var(--neutral);
-        border-color: var(--neutral);
-        color: var(--text-neutral);
+        background: var(--spk-neutral);
+        border-color: var(--spk-neutral);
+        color: var(--spk-text-neutral);
     }
 
     .badge-palette-neutral.badge-outlined {
-        border-color: var(--neutral-muted);
-        color: var(--neutral-muted);
+        border-color: var(--spk-neutral-muted);
+        color: var(--spk-neutral-muted);
     }
 
     /* Elevation ----------------------------------------------------------- */
 
     .badge-elevation-subtle {
-        box-shadow: var(--spk-elevation-subtle) var(--shadow-subtle);
+        box-shadow: var(--spk-elevation-subtle) var(--spk-shadow-subtle);
     }
 
     .badge-elevation-hard {
-        box-shadow: var(--spk-elevation-hard) var(--shadow-hard);
+        box-shadow: var(--spk-elevation-hard) var(--spk-shadow-hard);
     }
 
     /* Uppercase ---------------------------------------------------------- */
@@ -287,100 +287,100 @@
     /* accent */
     button.badge-flat.badge-palette-accent:hover,
     a.badge-flat.badge-palette-accent:hover {
-        /*background: var(--accent-hover);*/
-        background: var(--accent-hover);
-        border-color: var(--accent-hover);
+        /*background: var(--spk-accent-hover);*/
+        background: var(--spk-accent-hover);
+        border-color: var(--spk-accent-hover);
     }
 
     button.badge-outlined.badge-palette-accent:hover,
     a.badge-outlined.badge-palette-accent:hover {
-        background: var(--accent);
-        border-color: var(--accent);
-        color: var(--text-accent);
+        background: var(--spk-accent);
+        border-color: var(--spk-accent);
+        color: var(--spk-text-accent);
     }
 
     /* Tone */
     button.badge-flat.badge-palette-tone:hover,
     a.badge-flat.badge-palette-tone:hover {
-        background: var(--tone-hover);
-        border-color: var(--tone-hover);
+        background: var(--spk-tone-hover);
+        border-color: var(--spk-tone-hover);
     }
 
     button.badge-outlined.badge-palette-tone:hover,
     a.badge-outlined.badge-palette-tone:hover {
-        background: var(--tone-hover);
-        border-color: var(--tone-hover);
-        color: var(--text);
+        background: var(--spk-tone-hover);
+        border-color: var(--spk-tone-hover);
+        color: var(--spk-text);
     }
 
     /* Error */
     button.badge-flat.badge-palette-error:hover,
     a.badge-flat.badge-palette-error:hover {
-        background: var(--error-hover);
-        border-color: var(--error-hover);
+        background: var(--spk-error-hover);
+        border-color: var(--spk-error-hover);
     }
 
     button.badge-outlined.badge-palette-error:hover,
     a.badge-outlined.badge-palette-error:hover {
-        background: var(--error);
-        border-color: var(--error);
-        color: var(--text-error);
+        background: var(--spk-error);
+        border-color: var(--spk-error);
+        color: var(--spk-text-error);
     }
 
     /* Warning */
     button.badge-flat.badge-palette-warning:hover,
     a.badge-flat.badge-palette-warning:hover {
-        background: var(--warning-hover);
-        border-color: var(--warning-hover);
+        background: var(--spk-warning-hover);
+        border-color: var(--spk-warning-hover);
     }
 
     button.badge-outlined.badge-palette-warning:hover,
     a.badge-outlined.badge-palette-warning:hover {
-        background: var(--warning);
-        border-color: var(--warning);
-        color: var(--text-warning);
+        background: var(--spk-warning);
+        border-color: var(--spk-warning);
+        color: var(--spk-text-warning);
     }
 
     /* Success */
     button.badge-flat.badge-palette-success:hover,
     a.badge-flat.badge-palette-success:hover {
-        background: var(--success-hover);
-        border-color: var(--success-hover);
+        background: var(--spk-success-hover);
+        border-color: var(--spk-success-hover);
     }
 
     button.badge-outlined.badge-palette-success:hover,
     a.badge-outlined.badge-palette-success:hover {
-        background: var(--success);
-        border-color: var(--success);
-        color: var(--text-success);
+        background: var(--spk-success);
+        border-color: var(--spk-success);
+        color: var(--spk-text-success);
     }
 
     /* Info */
     button.badge-flat.badge-palette-info:hover,
     a.badge-flat.badge-palette-info:hover {
-        background: var(--info-hover);
-        border-color: var(--info-hover);
+        background: var(--spk-info-hover);
+        border-color: var(--spk-info-hover);
     }
 
     button.badge-outlined.badge-palette-info:hover,
     a.badge-outlined.badge-palette-info:hover {
-        background: var(--info);
-        border-color: var(--info);
-        color: var(--text-info);
+        background: var(--spk-info);
+        border-color: var(--spk-info);
+        color: var(--spk-text-info);
     }
 
     /* Neutral */
     button.badge-flat.badge-palette-neutral:hover,
     a.badge-flat.badge-palette-neutral:hover {
-        background: var(--neutral-hover);
-        border-color: var(--neutral-hover);
+        background: var(--spk-neutral-hover);
+        border-color: var(--spk-neutral-hover);
     }
 
     button.badge-outlined.badge-palette-neutral:hover,
     a.badge-outlined.badge-palette-neutral:hover {
-        background: var(--neutral);
-        border-color: var(--neutral);
-        color: var(--text-neutral);
+        background: var(--spk-neutral);
+        border-color: var(--spk-neutral);
+        color: var(--spk-text-neutral);
     }
 
     /* Selected - mirrors hover styles ------------------------------------ */
@@ -388,99 +388,99 @@
     /* accent */
     button.badge-flat.badge-palette-accent.badge-selected,
     a.badge-flat.badge-palette-accent.badge-selected {
-        background: var(--accent-hover);
-        border-color: var(--accent-muted);
+        background: var(--spk-accent-hover);
+        border-color: var(--spk-accent-muted);
     }
 
     button.badge-outlined.badge-palette-accent.badge-selected,
     a.badge-outlined.badge-palette-accent.badge-selected {
-        background: var(--accent);
-        border-color: var(--accent);
-        color: var(--text-accent);
+        background: var(--spk-accent);
+        border-color: var(--spk-accent);
+        color: var(--spk-text-accent);
     }
 
     /* Tone */
     button.badge-flat.badge-palette-tone.badge-selected,
     a.badge-flat.badge-palette-tone.badge-selected {
-        background: var(--tone-hover);
-        border-color: var(--tone-muted);
+        background: var(--spk-tone-hover);
+        border-color: var(--spk-tone-muted);
     }
 
     button.badge-outlined.badge-palette-tone.badge-selected,
     a.badge-outlined.badge-palette-tone.badge-selected {
-        background: var(--tone-hover);
-        border-color: var(--accent);
-        color: var(--text);
+        background: var(--spk-tone-hover);
+        border-color: var(--spk-accent);
+        color: var(--spk-text);
     }
 
     /* Error */
     button.badge-flat.badge-palette-error.badge-selected,
     a.badge-flat.badge-palette-error.badge-selected {
-        background: var(--error-hover);
-        border-color: var(--error-muted);
+        background: var(--spk-error-hover);
+        border-color: var(--spk-error-muted);
     }
 
     button.badge-outlined.badge-palette-error.badge-selected,
     a.badge-outlined.badge-palette-error.badge-selected {
-        background: var(--error);
-        border-color: var(--error);
-        color: var(--text-error);
+        background: var(--spk-error);
+        border-color: var(--spk-error);
+        color: var(--spk-text-error);
     }
 
     /* Warning */
     button.badge-flat.badge-palette-warning.badge-selected,
     a.badge-flat.badge-palette-warning.badge-selected {
-        background: var(--warning-hover);
-        border-color: var(--warning-muted);
+        background: var(--spk-warning-hover);
+        border-color: var(--spk-warning-muted);
     }
 
     button.badge-outlined.badge-palette-warning.badge-selected,
     a.badge-outlined.badge-palette-warning.badge-selected {
-        background: var(--warning);
-        border-color: var(--warning);
-        color: var(--text-warning);
+        background: var(--spk-warning);
+        border-color: var(--spk-warning);
+        color: var(--spk-text-warning);
     }
 
     /* Success */
     button.badge-flat.badge-palette-success.badge-selected,
     a.badge-flat.badge-palette-success.badge-selected {
-        background: var(--success-hover);
-        border-color: var(--success-muted);
+        background: var(--spk-success-hover);
+        border-color: var(--spk-success-muted);
     }
 
     button.badge-outlined.badge-palette-success.badge-selected,
     a.badge-outlined.badge-palette-success.badge-selected {
-        background: var(--success);
-        border-color: var(--success);
-        color: var(--text-success);
+        background: var(--spk-success);
+        border-color: var(--spk-success);
+        color: var(--spk-text-success);
     }
 
     /* Info */
     button.badge-flat.badge-palette-info.badge-selected,
     a.badge-flat.badge-palette-info.badge-selected {
-        background: var(--info-hover);
-        border-color: var(--info-muted);
+        background: var(--spk-info-hover);
+        border-color: var(--spk-info-muted);
     }
 
     button.badge-outlined.badge-palette-info.badge-selected,
     a.badge-outlined.badge-palette-info.badge-selected {
-        background: var(--info);
-        border-color: var(--info);
-        color: var(--text-info);
+        background: var(--spk-info);
+        border-color: var(--spk-info);
+        color: var(--spk-text-info);
     }
 
     /* Neutral */
     button.badge-flat.badge-palette-neutral.badge-selected,
     a.badge-flat.badge-palette-neutral.badge-selected {
-        background: var(--neutral-hover);
-        border-color: var(--neutral-muted);
+        background: var(--spk-neutral-hover);
+        border-color: var(--spk-neutral-muted);
     }
 
     button.badge-outlined.badge-palette-neutral.badge-selected,
     a.badge-outlined.badge-palette-neutral.badge-selected {
-        background: var(--neutral);
-        border-color: var(--neutral);
-        color: var(--text-neutral);
+        background: var(--spk-neutral);
+        border-color: var(--spk-neutral);
+        color: var(--spk-text-neutral);
     }
 
     /* Trailing icon ------------------------------------------------------ */

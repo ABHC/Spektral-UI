@@ -141,33 +141,33 @@
     /* Palette -------------------------------------------------------------- */
 
     .hero-palette-transparent {
-        background: var(--tone-bg);
-        color: var(--text);
+        background: var(--spk-tone-bg);
+        color: var(--spk-text);
     }
 
     .hero-palette-tone {
-        background: var(--tone);
-        color: var(--text);
+        background: var(--spk-tone);
+        color: var(--spk-text);
     }
 
     .hero-palette-accent {
-        background: var(--accent);
-        color: var(--text-accent);
+        background: var(--spk-accent);
+        color: var(--spk-text-accent);
     }
 
     .hero-palette-accent-bg {
-        background: var(--accent-bg);
-        color: var(--text);
+        background: var(--spk-accent-bg);
+        color: var(--spk-text);
     }
 
     .hero-palette-accent :global(h3) {
-        color: var(--text-accent);
+        color: var(--spk-text-accent);
     }
 
     .hero-palette-transparent :global(h3),
     .hero-palette-tone :global(h3),
     .hero-palette-accent-bg :global(h3) {
-        color: var(--text);
+        color: var(--spk-text);
     }
 
     /* Pattern layer -------------------------------------------------------- */
@@ -196,7 +196,7 @@
     .hero-effect-glow {
         background: radial-gradient(
             ellipse 60% 50% at 50% 40%,
-            color-mix(in oklch, var(--accent) 8%, transparent),
+            color-mix(in oklch, var(--spk-accent) 8%, transparent),
             transparent
         );
     }
@@ -209,7 +209,7 @@
         background: linear-gradient(
             to bottom,
             transparent 0%,
-            color-mix(in oklch, var(--tone-bg) 80%, transparent) 100%
+            color-mix(in oklch, var(--spk-tone-bg) 80%, transparent) 100%
         );
     }
 

@@ -93,8 +93,8 @@
         position: relative;
         display: flex;
         box-sizing: border-box;
-        color: var(--text);
-        font-family: var(--font-body);
+        color: var(--spk-text);
+        font-family: var(--spk-font-body);
         padding: 15px;
     }
 
@@ -125,38 +125,38 @@
     /* Palette - set local custom properties -------------------------------- */
 
     .marquee-palette-accent {
-        --mrq-bg: var(--accent-bg);
-        --mrq-border: var(--accent-hover);
+        --mrq-bg: var(--spk-accent-bg);
+        --mrq-border: var(--spk-accent-hover);
     }
 
     .marquee-palette-tone {
-        --mrq-bg: var(--tone);
-        --mrq-border: var(--tone-hover);
+        --mrq-bg: var(--spk-tone);
+        --mrq-border: var(--spk-tone-hover);
     }
 
     .marquee-palette-neutral {
-        --mrq-bg: var(--neutral-bg);
-        --mrq-border: var(--neutral-hover);
+        --mrq-bg: var(--spk-neutral-bg);
+        --mrq-border: var(--spk-neutral-hover);
     }
 
     .marquee-palette-error {
-        --mrq-bg: var(--error-bg);
-        --mrq-border: var(--error-hover);
+        --mrq-bg: var(--spk-error-bg);
+        --mrq-border: var(--spk-error-hover);
     }
 
     .marquee-palette-warning {
-        --mrq-bg: var(--warning-bg);
-        --mrq-border: var(--warning-hover);
+        --mrq-bg: var(--spk-warning-bg);
+        --mrq-border: var(--spk-warning-hover);
     }
 
     .marquee-palette-success {
-        --mrq-bg: var(--success-bg);
-        --mrq-border: var(--success-hover);
+        --mrq-bg: var(--spk-success-bg);
+        --mrq-border: var(--spk-success-hover);
     }
 
     .marquee-palette-info {
-        --mrq-bg: var(--info-bg);
-        --mrq-border: var(--info-hover);
+        --mrq-bg: var(--spk-info-bg);
+        --mrq-border: var(--spk-info-hover);
     }
 
     /* Variants ------------------------------------------------------------- */
@@ -187,11 +187,11 @@
     }
 
     .marquee-elevation-subtle {
-        box-shadow: var(--spk-elevation-subtle) var(--shadow-subtle);
+        box-shadow: var(--spk-elevation-subtle) var(--spk-shadow-subtle);
     }
 
     .marquee-elevation-hard {
-        box-shadow: var(--spk-elevation-hard) var(--shadow-hard);
+        box-shadow: var(--spk-elevation-hard) var(--spk-shadow-hard);
     }
 
     /* Track & groups ------------------------------------------------------- */

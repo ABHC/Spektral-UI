@@ -132,7 +132,7 @@
         width: var(--radio-size, 18px);
         height: var(--radio-size, 18px);
         border-radius: var(--spk-radius-circle);
-        border: var(--spk-border) solid var(--text-muted);
+        border: var(--spk-border) solid var(--spk-text-muted);
         background: transparent;
         transition: border-color var(--spk-duration-base) ease;
     }
@@ -152,12 +152,12 @@
 
     /* Checked state */
     .radio-input:checked ~ .radio-control {
-        border-color: var(--radio-checked-color, var(--accent));
+        border-color: var(--radio-checked-color, var(--spk-accent));
     }
 
     .radio-input:checked ~ .radio-control::after {
         transform: translate(-50%, -50%) scale(1);
-        background: var(--radio-checked-color, var(--accent));
+        background: var(--radio-checked-color, var(--spk-accent));
     }
 
     /* Label text */
@@ -193,11 +193,11 @@
     /* Palettes -------------------------------------------------------- */
 
     .radio-palette-accent { 
-        --radio-checked-color: var(--accent);
+        --radio-checked-color: var(--spk-accent);
     }
 
     .radio-palette-tone { 
-        --radio-checked-color: var(--text); 
+        --radio-checked-color: var(--spk-text); 
     }
 
     /* Disabled -------------------------------------------------------- */
@@ -219,7 +219,7 @@
     /* Focus visible - keyboard nav ------------------------------------ */
 
     .radio-input:focus-visible ~ .radio-control {
-        outline: var(--focus-ring-width) solid var(--focus-ring);
-        outline-offset: var(--focus-ring-offset);
+        outline: var(--spk-focus-ring-width) solid var(--spk-focus-ring);
+        outline-offset: var(--spk-focus-ring-offset);
     }
 </style>

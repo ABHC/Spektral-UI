@@ -55,87 +55,87 @@
     .accordion {
         display: flex;
         flex-direction: column;
-        font-family: var(--font-body);
-        color: var(--text);
+        font-family: var(--spk-font-body);
+        color: var(--spk-text);
     }
 
     /* Palette - set local custom properties ------------------------------- */
 
     .accordion-palette-accent {
-        --acc-color: var(--accent);
-        --acc-bg: var(--accent-bg);
-        --acc-hover: var(--accent-hover);
-        --acc-text: var(--text-accent);
-        --acc-border: var(--accent-hover);
-        --acc-header-flat: var(--accent);
-        --acc-header-flat-text: var(--text-accent);
-        --acc-header-ghost-text: var(--text);
+        --acc-color: var(--spk-accent);
+        --acc-bg: var(--spk-accent-bg);
+        --acc-hover: var(--spk-accent-hover);
+        --acc-text: var(--spk-text-accent);
+        --acc-border: var(--spk-accent-hover);
+        --acc-header-flat: var(--spk-accent);
+        --acc-header-flat-text: var(--spk-text-accent);
+        --acc-header-ghost-text: var(--spk-text);
     }
 
     .accordion-palette-tone {
-        --acc-color: var(--tone);
-        --acc-bg: var(--tone);
-        --acc-hover: var(--tone-hover);
-        --acc-text: var(--text);
-        --acc-border: var(--tone-hover);
-        --acc-header-flat: var(--tone-hover);
-        --acc-header-flat-text: var(--text);
-        --acc-header-ghost-text: var(--text);
+        --acc-color: var(--spk-tone);
+        --acc-bg: var(--spk-tone);
+        --acc-hover: var(--spk-tone-hover);
+        --acc-text: var(--spk-text);
+        --acc-border: var(--spk-tone-hover);
+        --acc-header-flat: var(--spk-tone-hover);
+        --acc-header-flat-text: var(--spk-text);
+        --acc-header-ghost-text: var(--spk-text);
     }
 
     .accordion-palette-neutral {
-        --acc-color: var(--neutral);
-        --acc-bg: var(--neutral-bg);
-        --acc-hover: var(--neutral-hover);
-        --acc-text: var(--text-neutral);
-        --acc-border: var(--neutral-hover);
-        --acc-header-flat: var(--neutral);
-        --acc-header-flat-text: var(--text-neutral);
-        --acc-header-ghost-text: var(--text);
+        --acc-color: var(--spk-neutral);
+        --acc-bg: var(--spk-neutral-bg);
+        --acc-hover: var(--spk-neutral-hover);
+        --acc-text: var(--spk-text-neutral);
+        --acc-border: var(--spk-neutral-hover);
+        --acc-header-flat: var(--spk-neutral);
+        --acc-header-flat-text: var(--spk-text-neutral);
+        --acc-header-ghost-text: var(--spk-text);
     }
 
     .accordion-palette-error {
-        --acc-color: var(--error);
-        --acc-bg: var(--error-bg);
-        --acc-hover: var(--error-hover);
-        --acc-text: var(--text-error);
-        --acc-border: var(--error-hover);
-        --acc-header-flat: var(--error);
-        --acc-header-flat-text: var(--text-error);
-        --acc-header-ghost-text: var(--text);
+        --acc-color: var(--spk-error);
+        --acc-bg: var(--spk-error-bg);
+        --acc-hover: var(--spk-error-hover);
+        --acc-text: var(--spk-text-error);
+        --acc-border: var(--spk-error-hover);
+        --acc-header-flat: var(--spk-error);
+        --acc-header-flat-text: var(--spk-text-error);
+        --acc-header-ghost-text: var(--spk-text);
     }
 
     .accordion-palette-warning {
-        --acc-color: var(--warning);
-        --acc-bg: var(--warning-bg);
-        --acc-hover: var(--warning-hover);
-        --acc-text: var(--text-warning);
-        --acc-border: var(--warning-hover);
-        --acc-header-flat: var(--warning);
-        --acc-header-flat-text: var(--text-warning);
-        --acc-header-ghost-text: var(--text);
+        --acc-color: var(--spk-warning);
+        --acc-bg: var(--spk-warning-bg);
+        --acc-hover: var(--spk-warning-hover);
+        --acc-text: var(--spk-text-warning);
+        --acc-border: var(--spk-warning-hover);
+        --acc-header-flat: var(--spk-warning);
+        --acc-header-flat-text: var(--spk-text-warning);
+        --acc-header-ghost-text: var(--spk-text);
     }
 
     .accordion-palette-success {
-        --acc-color: var(--success);
-        --acc-bg: var(--success-bg);
-        --acc-hover: var(--success-hover);
-        --acc-text: var(--text-success);
-        --acc-border: var(--success-hover);
-        --acc-header-flat: var(--success);
-        --acc-header-flat-text: var(--text-success);
-        --acc-header-ghost-text: var(--text);
+        --acc-color: var(--spk-success);
+        --acc-bg: var(--spk-success-bg);
+        --acc-hover: var(--spk-success-hover);
+        --acc-text: var(--spk-text-success);
+        --acc-border: var(--spk-success-hover);
+        --acc-header-flat: var(--spk-success);
+        --acc-header-flat-text: var(--spk-text-success);
+        --acc-header-ghost-text: var(--spk-text);
     }
 
     .accordion-palette-info {
-        --acc-color: var(--info);
-        --acc-bg: var(--info-bg);
-        --acc-hover: var(--info-hover);
-        --acc-text: var(--text-info);
-        --acc-border: var(--info-hover);
-        --acc-header-flat: var(--info);
-        --acc-header-flat-text: var(--text-info);
-        --acc-header-ghost-text: var(--text);
+        --acc-color: var(--spk-info);
+        --acc-bg: var(--spk-info-bg);
+        --acc-hover: var(--spk-info-hover);
+        --acc-text: var(--spk-text-info);
+        --acc-border: var(--spk-info-hover);
+        --acc-header-flat: var(--spk-info);
+        --acc-header-flat-text: var(--spk-text-info);
+        --acc-header-ghost-text: var(--spk-text);
     }
 
     /* Variants ------------------------------------------------------------ */
@@ -155,7 +155,7 @@
     /* Ghost: separator between items */
     .accordion-ghost > :global(.accordion-header + .accordion-header),
     .accordion-ghost > :global(.accordion-item + .accordion-header) {
-        border-top: var(--spk-border) solid var(--acc-border, var(--tone-hover));
+        border-top: var(--spk-border) solid var(--acc-border, var(--spk-tone-hover));
     }
 
     /* Sizes --------------------------------------------------------------- */
@@ -182,21 +182,21 @@
 
     /* Ghost: shadow on parent (items form a single visual block) */
     .accordion-ghost.accordion-elevation-subtle {
-        box-shadow: var(--spk-elevation-subtle) var(--shadow-subtle);
+        box-shadow: var(--spk-elevation-subtle) var(--spk-shadow-subtle);
     }
 
     .accordion-ghost.accordion-elevation-hard {
-        box-shadow: var(--spk-elevation-hard) var(--shadow-hard);
+        box-shadow: var(--spk-elevation-hard) var(--spk-shadow-hard);
     }
 
     /* Flat / Outlined: shadow on each child (items are separated by gap) */
     .accordion-flat.accordion-elevation-subtle > :global(.accordion-header),
     .accordion-outlined.accordion-elevation-subtle > :global(.accordion-header) {
-        box-shadow: var(--spk-elevation-subtle) var(--shadow-subtle);
+        box-shadow: var(--spk-elevation-subtle) var(--spk-shadow-subtle);
     }
 
     .accordion-flat.accordion-elevation-hard > :global(.accordion-header),
     .accordion-outlined.accordion-elevation-hard > :global(.accordion-header) {
-        box-shadow: var(--spk-elevation-hard) var(--shadow-hard);
+        box-shadow: var(--spk-elevation-hard) var(--spk-shadow-hard);
     }
 </style>

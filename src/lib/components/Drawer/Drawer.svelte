@@ -159,33 +159,33 @@
     /* Palette: accent ------------------------------------------------- */
 
     .drawer-palette-accent {
-        background: var(--accent);
-        color: var(--text-accent);
+        background: var(--spk-accent);
+        color: var(--spk-text-accent);
 
-        --drawer-text: var(--text-accent);
-        --drawer-muted: var(--text-accent);
-        --drawer-separator: var(--accent-hover);
-        --drawer-item-hover-bg: var(--accent-ghost-hover);
-        --drawer-item-active-bg: var(--accent-ghost-hover);
-        --drawer-item-active-border: var(--accent-hover);
+        --drawer-text: var(--spk-text-accent);
+        --drawer-muted: var(--spk-text-accent);
+        --drawer-separator: var(--spk-accent-hover);
+        --drawer-item-hover-bg: var(--spk-accent-ghost-hover);
+        --drawer-item-active-bg: var(--spk-accent-ghost-hover);
+        --drawer-item-active-border: var(--spk-accent-hover);
 
-        --dot-bg: var(--accent);
+        --dot-bg: var(--spk-accent);
     }
 
     /* Palette: tone --------------------------------------------------- */
 
     .drawer-palette-tone {
-        background: var(--tone);
-        color: var(--text);
+        background: var(--spk-tone);
+        color: var(--spk-text);
 
-        --drawer-text: var(--text);
-        --drawer-muted: var(--text-muted);
-        --drawer-separator: var(--tone-hover);
-        --drawer-item-hover-bg: var(--tone-hover);
-        --drawer-item-active-bg: var(--accent);
-        --drawer-item-active-border: var(--accent);
+        --drawer-text: var(--spk-text);
+        --drawer-muted: var(--spk-text-muted);
+        --drawer-separator: var(--spk-tone-hover);
+        --drawer-item-hover-bg: var(--spk-tone-hover);
+        --drawer-item-active-bg: var(--spk-accent);
+        --drawer-item-active-border: var(--spk-accent);
 
-        --dot-bg: var(--tone);
+        --dot-bg: var(--spk-tone);
     }
 
     /* Slots ----------------------------------------------------------- */
@@ -203,7 +203,7 @@
         flex-direction: column;
         gap: 1rem;
         padding: 0.75rem;
-        font-family: var(--font-body);
+        font-family: var(--spk-font-body);
         overflow-y: auto;
         scrollbar-width: thin;
         scrollbar-color: var(--drawer-separator, rgba(128, 128, 128, 0.3)) transparent;

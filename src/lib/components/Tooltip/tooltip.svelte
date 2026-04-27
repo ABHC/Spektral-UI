@@ -351,21 +351,21 @@
     /* Palette --------------------------------------------------------- */
 
     .tooltip-palette-tone {
-        --tooltip-bg: var(--tone);
-        --tooltip-border: var(--tone-hover);
-        --tooltip-text: var(--text);
+        --tooltip-bg: var(--spk-tone);
+        --tooltip-border: var(--spk-tone-hover);
+        --tooltip-text: var(--spk-text);
     }
 
     .tooltip-palette-accent {
-        --tooltip-bg: var(--accent);
-        --tooltip-border: var(--accent-hover);
-        --tooltip-text: var(--text-accent);
+        --tooltip-bg: var(--spk-accent);
+        --tooltip-border: var(--spk-accent-hover);
+        --tooltip-text: var(--spk-text-accent);
     }
 
     .tooltip-palette-accentbg {
-        --tooltip-bg: var(--accent-bg);
-        --tooltip-border: var(--tone-hover);
-        --tooltip-text: var(--text-accent);
+        --tooltip-bg: var(--spk-accent-bg);
+        --tooltip-border: var(--spk-tone-hover);
+        --tooltip-text: var(--spk-text-accent);
     }
 
     /* Rounded --------------------------------------------------------- */
@@ -381,10 +381,10 @@
     }
 
     .tooltip-elevation-subtle {
-        box-shadow: var(--spk-elevation-subtle) var(--shadow-subtle);
+        box-shadow: var(--spk-elevation-subtle) var(--spk-shadow-subtle);
     }
 
     .tooltip-elevation-hard {
-        box-shadow: var(--spk-elevation-hard) var(--shadow-hard);
+        box-shadow: var(--spk-elevation-hard) var(--spk-shadow-hard);
     }
 </style>

@@ -120,7 +120,7 @@
        Works automatically on any background (neutral or accent). */
     .switch-track:not(.switch-checked) {
         background: transparent;
-        box-shadow: 0 0 0 2px var(--text-muted);
+        box-shadow: 0 0 0 2px var(--spk-text-muted);
     }
 
     /* Knob ------------------------------------------------------------ */
@@ -137,7 +137,7 @@
         left: var(--switch-begin);
         top: 50%;
         transform:  translate(0, -50%);
-        background: var(--text-muted);
+        background: var(--spk-text-muted);
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
         transition: transform var(--spk-duration-base) var(--spk-ease-glide),
                     background var(--spk-duration-base) ease;
@@ -187,72 +187,72 @@
 
     /* Accent */
     .switch-palette-accent .switch-checked {
-        background: var(--accent);
+        background: var(--spk-accent);
         box-shadow: none;
     }
 
     .switch-palette-accent .switch-checked .switch-knob {
-        background: var(--text-accent);
+        background: var(--spk-text-accent);
     }
 
     /* Tone */
     .switch-palette-tone .switch-checked {
-        background: var(--text);
+        background: var(--spk-text);
         box-shadow: none;
     }
 
     .switch-palette-tone .switch-checked .switch-knob {
-        background: var(--tone-hover);
+        background: var(--spk-tone-hover);
     }
 
     /* Error */
     .switch-palette-error .switch-checked {
-        background: var(--error);
+        background: var(--spk-error);
         box-shadow: none;
     }
 
     .switch-palette-error .switch-checked .switch-knob {
-        background: var(--text-accent);
+        background: var(--spk-text-accent);
     }
 
     /* Warning */
     .switch-palette-warning .switch-checked {
-        background: var(--warning);
+        background: var(--spk-warning);
         box-shadow: none;
     }
 
     .switch-palette-warning .switch-checked .switch-knob {
-        background: var(--text-accent);
+        background: var(--spk-text-accent);
     }
 
     /* Success */
     .switch-palette-success .switch-checked {
-        background: var(--success);
+        background: var(--spk-success);
         box-shadow: none;
     }
 
     .switch-palette-success .switch-checked .switch-knob {
-        background: var(--text-accent);
+        background: var(--spk-text-accent);
     }
 
     /* Info */
     .switch-palette-info .switch-checked {
-        background: var(--info);
+        background: var(--spk-info);
         box-shadow: none;
     }
 
     .switch-palette-info .switch-checked .switch-knob {
-        background: var(--text-accent);
+        background: var(--spk-text-accent);
     }
 
     /* Neutral */
     .switch-palette-neutral .switch-checked {
-        background: var(--neutral);
+        background: var(--spk-neutral);
         box-shadow: none;
     }
 
     .switch-palette-neutral .switch-checked .switch-knob {
-        background: var(--text-neutral);
+        background: var(--spk-text-neutral);
     }
 
     /* Disabled -------------------------------------------------------- */
@@ -266,7 +266,7 @@
     /* Focus visible - keyboard nav ------------------------------------ */
 
     .switch-input:focus-visible ~ .switch-track {
-        outline:        var(--focus-ring-width) solid var(--focus-ring);
-        outline-offset: var(--focus-ring-offset);
+        outline:        var(--spk-focus-ring-width) solid var(--spk-focus-ring);
+        outline-offset: var(--spk-focus-ring-offset);
     }
 </style>

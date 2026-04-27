@@ -133,8 +133,8 @@
     .timeline-dot {
         width: var(--tl-dot-size, 1.4rem);
         height: var(--tl-dot-size, 1.4rem);
-        background: var(--tone-hover);
-        color: var(--text-muted);
+        background: var(--spk-tone-hover);
+        color: var(--spk-text-muted);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -170,7 +170,7 @@
     /* Outlined variant: dot uses outline instead of fill */
     :global(.timeline-outlined) .timeline-dot {
         background: transparent;
-        border: var(--spk-border) solid var(--tone-hover);
+        border: var(--spk-border) solid var(--spk-tone-hover);
     }
 
     :global(.timeline-outlined) .timeline-item-on .timeline-dot {
@@ -189,7 +189,7 @@
        just overrides --tl-conn via .timeline-connector-on. */
 
     .timeline-connector {
-        --tl-conn: var(--tone-hover);
+        --tl-conn: var(--spk-tone-hover);
         background: var(--tl-conn);
         transition: background var(--spk-duration-base) ease;
     }
@@ -284,7 +284,7 @@
     .timeline-title {
         font-size: var(--tl-font-size, 0.9rem);
         font-weight: 600;
-        color: var(--text);
+        color: var(--spk-text);
         line-height: 1.3;
         transition: color var(--spk-duration-base) ease;
     }
@@ -295,15 +295,15 @@
 
     .timeline-meta {
         font-size: var(--tl-meta-font-size, 0.75rem);
-        font-family: var(--font-mono, monospace);
-        color: var(--text-muted);
+        font-family: var(--spk-font-mono, monospace);
+        color: var(--spk-text-muted);
         letter-spacing: 0.02em;
     }
 
     .timeline-body {
         font-size: calc(var(--tl-font-size, 0.9rem) * 0.95);
         line-height: 1.55;
-        color: var(--text-muted);
+        color: var(--spk-text-muted);
     }
 
     :global(.timeline-vertical) .timeline-body {

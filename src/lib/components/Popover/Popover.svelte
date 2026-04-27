@@ -187,28 +187,28 @@
     /* Palette - tone -------------------------------------------------- */
 
     .popover-palette-tone {
-        background: var(--tone);
-        border: var(--spk-border) solid var(--tone-hover);
-        color: var(--text);
-        scrollbar-color: var(--tone-hover) var(--tone)
+        background: var(--spk-tone);
+        border: var(--spk-border) solid var(--spk-tone-hover);
+        color: var(--spk-text);
+        scrollbar-color: var(--spk-tone-hover) var(--spk-tone)
     }
 
     /* Palette - accent ------------------------------------------------ */
 
     .popover-palette-accent {
-        background: var(--accent);
-        border: var(--spk-border) solid var(--accent-hover);
-        color: var(--text-accent);
-        scrollbar-color: var(--accent-muted) var(--accent)
+        background: var(--spk-accent);
+        border: var(--spk-border) solid var(--spk-accent-hover);
+        color: var(--spk-text-accent);
+        scrollbar-color: var(--spk-accent-muted) var(--spk-accent)
     }
 
     /* Palette - accentbg ---------------------------------------------- */
 
     .popover-palette-accentbg {
-        background: var(--accent-bg);
-        border: var(--spk-border) solid var(--tone-hover);
-        color: var(--text-accent);
-        scrollbar-color: var(--accent-hover) var(--accent-bg)
+        background: var(--spk-accent-bg);
+        border: var(--spk-border) solid var(--spk-tone-hover);
+        color: var(--spk-text-accent);
+        scrollbar-color: var(--spk-accent-hover) var(--spk-accent-bg)
     }
 
     /* Rounded --------------------------------------------------------- */
@@ -224,10 +224,10 @@
     }
 
     .popover-elevation-subtle {
-        box-shadow: var(--spk-elevation-subtle) var(--shadow-subtle);
+        box-shadow: var(--spk-elevation-subtle) var(--spk-shadow-subtle);
     }
 
     .popover-elevation-hard {
-        box-shadow: var(--spk-elevation-hard) var(--shadow-hard);
+        box-shadow: var(--spk-elevation-hard) var(--spk-shadow-hard);
     }
 </style>

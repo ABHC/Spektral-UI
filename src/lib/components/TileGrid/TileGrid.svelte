@@ -319,7 +319,7 @@
         position: relative;
         overflow: hidden;
         width: 100%;
-        color: var(--text);
+        color: var(--spk-text);
     }
 
     /*
@@ -342,7 +342,7 @@
     .tg-effect-glow {
         background: radial-gradient(
             ellipse 60% 50% at 50% 40%,
-            color-mix(in oklch, var(--accent) 8%, transparent),
+            color-mix(in oklch, var(--spk-accent) 8%, transparent),
             transparent
         );
     }
@@ -355,7 +355,7 @@
         background: linear-gradient(
             to bottom,
             transparent 0%,
-            color-mix(in oklch, var(--tone-bg) 80%, transparent) 100%
+            color-mix(in oklch, var(--spk-tone-bg) 80%, transparent) 100%
         );
     }
 
@@ -420,21 +420,21 @@
     /* Elevation - hover only (default) -------------------------------- */
 
     .tg-elevation-subtle:hover {
-        box-shadow: var(--spk-elevation-subtle) var(--shadow-subtle);
+        box-shadow: var(--spk-elevation-subtle) var(--spk-shadow-subtle);
     }
 
     .tg-elevation-hard:hover {
-        box-shadow: var(--spk-elevation-hard) var(--shadow-hard);
+        box-shadow: var(--spk-elevation-hard) var(--spk-shadow-hard);
     }
 
     /* Elevation - constant (raised=true) ------------------------------ */
 
     .tg-raised.tg-elevation-subtle {
-        box-shadow: var(--spk-elevation-subtle) var(--shadow-subtle);
+        box-shadow: var(--spk-elevation-subtle) var(--spk-shadow-subtle);
     }
 
     .tg-raised.tg-elevation-hard {
-        box-shadow: var(--spk-elevation-hard) var(--shadow-hard);
+        box-shadow: var(--spk-elevation-hard) var(--spk-shadow-hard);
     }
 
     /* Hero badge ------------------------------------------------------ */
@@ -473,20 +473,20 @@
     .tg-tile-flat {
         aspect-ratio: 4 / 3;
         border-left: var(--spk-border-accent) solid transparent;
-        background: var(--tone);
+        background: var(--spk-tone);
     }
 
     .tg-tile-flat.tg-tile-hero-border {
-        border-left: var(--spk-border-accent) solid var(--accent);
+        border-left: var(--spk-border-accent) solid var(--spk-accent);
     }
 
     .tg-tile-flat.tg-tile-hero {
-        border-left-color: var(--accent);
+        border-left-color: var(--spk-accent);
     }
 
     .tg-tile-flat:hover {
-        border-left-color: var(--accent);
-        background: var(--tone-hover);
+        border-left-color: var(--spk-accent);
+        background: var(--spk-tone-hover);
     }
 
     @media (min-width: 640px) {
@@ -506,21 +506,21 @@
 
     .tg-tile-deco {
         aspect-ratio: 4 / 3;
-        background: var(--tone);
+        background: var(--spk-tone);
     }
 
     .tg-tile-deco.tg-tile-hero-border {
-        border-left: var(--spk-border-accent) solid var(--accent);
+        border-left: var(--spk-border-accent) solid var(--spk-accent);
     }
 
     .tg-tile-deco.tg-tile-hero {
-        border-left-color: var(--accent);
-        background: var(--accent-ghost-hover);
+        border-left-color: var(--spk-accent);
+        background: var(--spk-accent-ghost-hover);
     }
 
     .tg-tile-deco:hover {
-        border-left: var(--spk-border-accent) solid var(--accent);
-        background: var(--tone-hover);
+        border-left: var(--spk-border-accent) solid var(--spk-accent);
+        background: var(--spk-tone-hover);
     }
 
     @media (min-width: 640px) {
@@ -676,7 +676,7 @@
 
     .tg-overlay .tg-name,
     .tg-overlay .tg-abstract {
-        color: var(--text-light);
+        color: var(--spk-text-light);
     }
 
     /* Hide the subtitle on very small screens to keep tiles compact */

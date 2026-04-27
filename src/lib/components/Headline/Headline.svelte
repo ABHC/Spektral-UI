@@ -57,7 +57,7 @@
         display: flex;
         align-items: baseline;
         gap: 10px;
-        color: var(--color, var(--text));
+        color: var(--color, var(--spk-text));
     }
 
     .headline-uppercase {
@@ -66,7 +66,7 @@
 
     .headline hr {
         flex: 1;
-        border: var(--spk-border-thin) solid var(--color, var(--text));
+        border: var(--spk-border-thin) solid var(--color, var(--spk-text));
     }
 
     .headline-xs {
@@ -74,10 +74,10 @@
     }
 
     .headline-muted {
-        color: var(--text-muted);
+        color: var(--spk-text-muted);
     }
 
     .hr-muted hr {
-        border-color: var(--text-muted);
+        border-color: var(--spk-text-muted);
     }
 </style>

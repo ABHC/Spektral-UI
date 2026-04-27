@@ -482,8 +482,8 @@
 
         display: flex;
         flex-direction: column;
-        background: var(--tone);
-        color: var(--text);
+        background: var(--spk-tone);
+        color: var(--spk-text);
         overflow: hidden;
         box-sizing: border-box;
     }
@@ -501,11 +501,11 @@
     }
 
     .color-picker-elevation-subtle {
-        box-shadow: var(--spk-elevation-subtle) var(--shadow-subtle);
+        box-shadow: var(--spk-elevation-subtle) var(--spk-shadow-subtle);
     }
 
     .color-picker-elevation-hard {
-        box-shadow: var(--spk-elevation-hard) var(--shadow-hard);
+        box-shadow: var(--spk-elevation-hard) var(--spk-shadow-hard);
     }
 
     /* Zones ---------------------------------------------------------------- */
@@ -543,7 +543,7 @@
 
     .color-picker-footer {
         padding: calc(var(--cp-padding) * 0.75) var(--cp-padding);
-        border-top: var(--spk-border-thin) solid var(--tone-hover);
+        border-top: var(--spk-border-thin) solid var(--spk-tone-hover);
         display: flex;
         align-items: center;
         gap: 0.75rem;
@@ -589,7 +589,7 @@
     .cp-preview {
         width: 56px;
         min-height: 56px;
-        border: var(--spk-border-thin) solid var(--tone-hover);
+        border: var(--spk-border-thin) solid var(--spk-tone-hover);
         flex-shrink: 0;
     }
 
@@ -631,16 +631,16 @@
         font-size: 0.7rem;
         font-family: monospace;
         font-weight: 600;
-        background: var(--tone-bg);
-        color: var(--text);
-        border: var(--spk-border-thin) solid var(--tone-hover);
+        background: var(--spk-tone-bg);
+        color: var(--spk-text);
+        border: var(--spk-border-thin) solid var(--spk-tone-hover);
         border-radius: var(--spk-radius-edge);
         padding: 2px 6px;
         width: 6rem;
     }
 
     .cp-input:focus {
-        outline: 2px solid var(--accent);
+        outline: 2px solid var(--spk-accent);
         outline-offset: -1px;
     }
 
@@ -673,7 +673,7 @@
         height: 12px;
         border-radius: var(--spk-radius-edge);
         position: relative;
-        border: var(--spk-border-thin) solid var(--tone-hover);
+        border: var(--spk-border-thin) solid var(--spk-tone-hover);
     }
 
     .cp-alpha-track {

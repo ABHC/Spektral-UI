@@ -132,7 +132,7 @@
 
     .search-field:focus-within {
         border-color: var(--sf-focus);
-        box-shadow: 0 0 0 3px var(--accent-ghost-hover);
+        box-shadow: 0 0 0 3px var(--spk-accent-ghost-hover);
     }
 
     /* Icon ------------------------------------------------------------ */
@@ -141,7 +141,7 @@
         width: 1em;
         height: 1em;
         flex-shrink: 0;
-        color: var(--text-muted);
+        color: var(--spk-text-muted);
     }
 
     /* Input ----------------------------------------------------------- */
@@ -151,13 +151,13 @@
         background: transparent;
         border: none;
         outline: none;
-        color: var(--text);
-        font-family: var(--font-body);
+        color: var(--spk-text);
+        font-family: var(--spk-font-body);
         min-width: 0;
     }
 
     .search-field-input::placeholder {
-        color: var(--text-muted);
+        color: var(--spk-text-muted);
         opacity: var(--spk-opacity-muted);
     }
 
@@ -171,14 +171,14 @@
         border: none;
         padding: 0.15rem;
         cursor: pointer;
-        color: var(--text-muted);
+        color: var(--spk-text-muted);
         border-radius: var(--spk-radius-edge);
         transition: color var(--spk-duration-quick) ease, background var(--spk-duration-quick) ease;
     }
 
     .search-field-clear:hover {
-        color: var(--text);
-        background: var(--tone-hover);
+        color: var(--spk-text);
+        background: var(--spk-tone-hover);
     }
 
     .search-field-clear svg {
@@ -189,28 +189,28 @@
     /* Palette - tone -------------------------------------------------- */
 
     .search-field-palette-tone {
-        --sf-bg: var(--tone-bg);
-        --sf-border: var(--tone-hover);
-        --sf-focus: var(--accent-muted);
-        --sf-shadow: var(--accent-ghost-hover);
+        --sf-bg: var(--spk-tone-bg);
+        --sf-border: var(--spk-tone-hover);
+        --sf-focus: var(--spk-accent-muted);
+        --sf-shadow: var(--spk-accent-ghost-hover);
     }
 
     /* Palette - accent ------------------------------------------------ */
 
     .search-field-palette-accent {
-        --sf-bg: var(--tone-bg);
-        --sf-border: var(--accent-muted);
-        --sf-focus: var(--tone-muted);
-        --sf-shadow: var(--accent-ghost-hover);
+        --sf-bg: var(--spk-tone-bg);
+        --sf-border: var(--spk-accent-muted);
+        --sf-focus: var(--spk-tone-muted);
+        --sf-shadow: var(--spk-accent-ghost-hover);
     }
 
     /* Palette - accentbg ---------------------------------------------- */
 
     .search-field-palette-accentbg {
-        --sf-bg: var(--tone-bg);
-        --sf-border: var(--accent-bg);
-        --sf-focus: var(--tone-muted);
-        --sf-shadow: var(--accent-ghost-hover);
+        --sf-bg: var(--spk-tone-bg);
+        --sf-border: var(--spk-accent-bg);
+        --sf-focus: var(--spk-tone-muted);
+        --sf-shadow: var(--spk-accent-ghost-hover);
     }
 
     /* Rounded --------------------------------------------------------- */

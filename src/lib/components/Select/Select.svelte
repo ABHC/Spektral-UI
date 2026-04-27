@@ -243,12 +243,12 @@
     .select-label {
         font-size: 0.85rem;
         font-weight: 600;
-        color: var(--text);
+        color: var(--spk-text);
         line-height: 1.3;
     }
 
     .select-required {
-        color: var(--error);
+        color: var(--spk-error);
     }
 
     /* Trigger --------------------------------------------------------- */
@@ -258,11 +258,11 @@
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        background: var(--tone);
-        border: var(--spk-border) solid var(--tone-hover);
+        background: var(--spk-tone);
+        border: var(--spk-border) solid var(--spk-tone-hover);
         border-radius: var(--spk-radius-edge);
-        color: var(--text);
-        font-family: var(--font-body);
+        color: var(--spk-text);
+        font-family: var(--spk-font-body);
         cursor: pointer;
         transition: border-color var(--spk-duration-quick) ease, box-shadow var(--spk-duration-quick) ease;
         gap: 0.5rem;
@@ -270,13 +270,13 @@
     }
 
     .select-trigger:hover:not(:disabled) {
-        border-color: var(--accent-muted);
+        border-color: var(--spk-accent-muted);
     }
 
     .select-trigger:focus-visible {
         outline: none;
-        border-color: var(--accent-muted);
-        box-shadow: 0 0 0 3px var(--accent-ghost-hover);
+        border-color: var(--spk-accent-muted);
+        box-shadow: 0 0 0 3px var(--spk-accent-ghost-hover);
     }
 
     .select-value {
@@ -288,7 +288,7 @@
     }
 
     .select-value.is-placeholder {
-        color: var(--text-muted);
+        color: var(--spk-text-muted);
         opacity: var(--spk-opacity-muted);
     }
 
@@ -298,7 +298,7 @@
         width: 1.1em;
         height: 1.1em;
         flex-shrink: 0;
-        color: var(--text-muted);
+        color: var(--spk-text-muted);
         transition: transform var(--spk-duration-quick) var(--spk-ease-glide);
     }
 
@@ -310,7 +310,7 @@
 
     .select-header {
         padding: 0.5rem;
-        border-bottom: var(--spk-border-thin) solid var(--tone-hover);
+        border-bottom: var(--spk-border-thin) solid var(--spk-tone-hover);
         flex-shrink: 0;
     }
 
@@ -332,8 +332,8 @@
         background: none;
         border: none;
         border-radius: var(--spk-radius-edge);
-        color: var(--text);
-        font-family: var(--font-body);
+        color: var(--spk-text);
+        font-family: var(--spk-font-body);
         cursor: pointer;
         text-align: left;
         transition: background var(--spk-duration-quick) ease;
@@ -353,34 +353,34 @@
     /* Option palette - tone ------------------------------------------- */
 
     .select-option-tone .select-option:hover {
-        background: var(--tone-ghost-hover);
+        background: var(--spk-tone-ghost-hover);
     }
 
     .select-option-tone .select-option-active {
-        background: var(--accent-ghost-hover);
-        color: var(--accent-muted);
+        background: var(--spk-accent-ghost-hover);
+        color: var(--spk-accent-muted);
     }
 
     /* Option palette - accent ----------------------------------------- */
 
     .select-option-accent .select-option:hover {
-        background: var(--accent-hover);
+        background: var(--spk-accent-hover);
     }
 
     .select-option-accent .select-option-active {
-        background: var(--accent-hover);
-        color: var(--text-accent);
+        background: var(--spk-accent-hover);
+        color: var(--spk-text-accent);
     }
 
     /* Option palette - accentbg --------------------------------------- */
 
     .select-option-accentbg .select-option:hover {
-        background: var(--accent-ghost-hover);
+        background: var(--spk-accent-ghost-hover);
     }
 
     .select-option-accentbg .select-option-active {
-        background: var(--accent-ghost-hover);
-        color: var(--text-accent);
+        background: var(--spk-accent-ghost-hover);
+        color: var(--spk-text-accent);
     }
 
     /* Empty state ----------------------------------------------------- */
@@ -388,7 +388,7 @@
     .select-empty {
         padding: 0.75rem;
         text-align: center;
-        color: var(--text-muted);
+        color: var(--spk-text-muted);
         font-size: 0.85rem;
     }
 
@@ -396,7 +396,7 @@
 
     .select-footer {
         padding: 0.5rem;
-        border-top: var(--spk-border-thin) solid var(--tone-hover);
+        border-top: var(--spk-border-thin) solid var(--spk-tone-hover);
         flex-shrink: 0;
     }
 
@@ -404,16 +404,16 @@
 
     .select-message {
         font-size: 0.75rem;
-        color: var(--text-muted);
+        color: var(--spk-text-muted);
         line-height: 1.4;
     }
 
     .select-message-error {
-        color: var(--error);
+        color: var(--spk-error);
     }
 
     .select-message-success {
-        color: var(--success);
+        color: var(--spk-success);
     }
 
     /* Sizes ----------------------------------------------------------- */
@@ -465,21 +465,21 @@
     /* Validation states ----------------------------------------------- */
 
     .select-has-error .select-trigger {
-        border-color: var(--error);
+        border-color: var(--spk-error);
     }
 
     .select-has-error .select-trigger:focus-visible {
-        border-color: var(--error);
-        box-shadow: 0 0 0 3px var(--error-ghost-hover);
+        border-color: var(--spk-error);
+        box-shadow: 0 0 0 3px var(--spk-error-ghost-hover);
     }
 
     .select-has-success .select-trigger {
-        border-color: var(--success);
+        border-color: var(--spk-success);
     }
 
     .select-has-success .select-trigger:focus-visible {
-        border-color: var(--success);
-        box-shadow: 0 0 0 3px var(--success-ghost-hover);
+        border-color: var(--spk-success);
+        box-shadow: 0 0 0 3px var(--spk-success-ghost-hover);
     }
 
     /* Disabled -------------------------------------------------------- */

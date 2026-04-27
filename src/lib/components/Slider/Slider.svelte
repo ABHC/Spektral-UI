@@ -219,7 +219,7 @@
 
     .slider-base {
         width: 100%;
-        background: var(--tone-hover);
+        background: var(--spk-tone-hover);
         overflow: visible;
         position: relative;
         cursor: pointer;
@@ -240,13 +240,13 @@
 
     .slider-outlined {
         background: transparent;
-        border: var(--spk-border) solid var(--tone-hover);
+        border: var(--spk-border) solid var(--spk-tone-hover);
     }
 
     /* Elevation ------------------------------------------------------- */
 
-    .slider-elevation-subtle { box-shadow: var(--spk-elevation-subtle) var(--shadow-subtle); }
-    .slider-elevation-hard { box-shadow: var(--spk-elevation-hard) var(--shadow-hard); }
+    .slider-elevation-subtle { box-shadow: var(--spk-elevation-subtle) var(--spk-shadow-subtle); }
+    .slider-elevation-hard { box-shadow: var(--spk-elevation-hard) var(--spk-shadow-hard); }
 
     /* Fill ------------------------------------------------------------ */
 
@@ -258,13 +258,13 @@
         pointer-events: none;
     }
 
-    .slider-fill-accent { background: var(--accent); }
-    .slider-fill-tone { background: var(--tone-muted); }
-    .slider-fill-neutral { background: var(--neutral); }
-    .slider-fill-error { background: var(--error); }
-    .slider-fill-warning { background: var(--warning); }
-    .slider-fill-success { background: var(--success); }
-    .slider-fill-info { background: var(--info); }
+    .slider-fill-accent { background: var(--spk-accent); }
+    .slider-fill-tone { background: var(--spk-tone-muted); }
+    .slider-fill-neutral { background: var(--spk-neutral); }
+    .slider-fill-error { background: var(--spk-error); }
+    .slider-fill-warning { background: var(--spk-warning); }
+    .slider-fill-success { background: var(--spk-success); }
+    .slider-fill-info { background: var(--spk-info); }
 
     /* Thumb ----------------------------------------------------------- */
 
@@ -287,17 +287,17 @@
     }
 
     .slider-thumb:focus-visible {
-        outline: var(--focus-ring-width) solid var(--focus-ring);
-        outline-offset: var(--focus-ring-offset);
+        outline: var(--spk-focus-ring-width) solid var(--spk-focus-ring);
+        outline-offset: var(--spk-focus-ring-offset);
     }
 
-    .slider-thumb-accent { background: var(--accent); }
-    .slider-thumb-tone { background: var(--tone-muted); }
-    .slider-thumb-neutral { background: var(--neutral); }
-    .slider-thumb-error { background: var(--error); }
-    .slider-thumb-warning { background: var(--warning); }
-    .slider-thumb-success { background: var(--success); }
-    .slider-thumb-info { background: var(--info); }
+    .slider-thumb-accent { background: var(--spk-accent); }
+    .slider-thumb-tone { background: var(--spk-tone-muted); }
+    .slider-thumb-neutral { background: var(--spk-neutral); }
+    .slider-thumb-error { background: var(--spk-error); }
+    .slider-thumb-warning { background: var(--spk-warning); }
+    .slider-thumb-success { background: var(--spk-success); }
+    .slider-thumb-info { background: var(--spk-info); }
 
     /* Size-dependent thumb sizing */
     .slider-sm .slider-thumb { width: 14px; height: 14px; }
@@ -312,11 +312,11 @@
         font-size: 0.85rem;
     }
 
-    .slider-value-accent { color: var(--accent-muted); }
-    .slider-value-tone { color: var(--tone-muted); }
-    .slider-value-neutral { color: var(--neutral-muted); }
-    .slider-value-error { color: var(--error-muted); }
-    .slider-value-warning { color: var(--warning-muted); }
-    .slider-value-success { color: var(--success-muted); }
-    .slider-value-info { color: var(--info-muted); }
+    .slider-value-accent { color: var(--spk-accent-muted); }
+    .slider-value-tone { color: var(--spk-tone-muted); }
+    .slider-value-neutral { color: var(--spk-neutral-muted); }
+    .slider-value-error { color: var(--spk-error-muted); }
+    .slider-value-warning { color: var(--spk-warning-muted); }
+    .slider-value-success { color: var(--spk-success-muted); }
+    .slider-value-info { color: var(--spk-info-muted); }
 </style>

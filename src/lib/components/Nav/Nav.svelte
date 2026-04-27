@@ -162,7 +162,7 @@
     }
 
     .nav-items :global(.nav-label) {
-        font-family: var(--font-heading);
+        font-family: var(--spk-font-heading);
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.4px;
@@ -246,22 +246,22 @@
 
     /* accent */
     .nav-palette-accent {
-        background: var(--accent);
+        background: var(--spk-accent);
     }
 
     /* tone */
     .nav-palette-tone {
-        background: var(--tone);
+        background: var(--spk-tone);
     }
 
     /* Elevation ------------------------------------------------------------ */
 
     .nav-elevation-subtle {
-        box-shadow: var(--spk-elevation-subtle) var(--shadow-subtle);
+        box-shadow: var(--spk-elevation-subtle) var(--spk-shadow-subtle);
     }
 
     .nav-elevation-hard {
-        box-shadow: var(--spk-elevation-hard) var(--shadow-hard);
+        box-shadow: var(--spk-elevation-hard) var(--spk-shadow-hard);
     }
 
 </style>

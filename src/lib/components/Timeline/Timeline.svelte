@@ -93,9 +93,9 @@
 
     .timeline {
         display: flex;
-        font-family: var(--font-body);
-        color: var(--text);
-        --tl-connector-off: var(--tone-hover);
+        font-family: var(--spk-font-body);
+        color: var(--spk-text);
+        --tl-connector-off: var(--spk-tone-hover);
     }
 
     .timeline-vertical {
@@ -110,51 +110,51 @@
     /* Palette - set local custom properties --------------------------- */
 
     .timeline-palette-accent {
-        --tl-color: var(--accent);
-        --tl-bg: var(--accent-bg);
-        --tl-hover: var(--accent-hover);
-        --tl-marker: var(--text-accent);
-        --tl-text: var(--accent-muted);
+        --tl-color: var(--spk-accent);
+        --tl-bg: var(--spk-accent-bg);
+        --tl-hover: var(--spk-accent-hover);
+        --tl-marker: var(--spk-text-accent);
+        --tl-text: var(--spk-accent-muted);
     }
 
     .timeline-palette-neutral {
-        --tl-color: var(--neutral);
-        --tl-bg: var(--neutral-bg);
-        --tl-hover: var(--neutral-hover);
-        --tl-marker: var(--text-neutral);
-        --tl-text: var(--neutral-muted);
+        --tl-color: var(--spk-neutral);
+        --tl-bg: var(--spk-neutral-bg);
+        --tl-hover: var(--spk-neutral-hover);
+        --tl-marker: var(--spk-text-neutral);
+        --tl-text: var(--spk-neutral-muted);
     }
 
     .timeline-palette-error {
-        --tl-color: var(--error);
-        --tl-bg: var(--error-bg);
-        --tl-hover: var(--error-hover);
-        --tl-marker: var(--text-error);
-        --tl-text: var(--error-muted);
+        --tl-color: var(--spk-error);
+        --tl-bg: var(--spk-error-bg);
+        --tl-hover: var(--spk-error-hover);
+        --tl-marker: var(--spk-text-error);
+        --tl-text: var(--spk-error-muted);
     }
 
     .timeline-palette-warning {
-        --tl-color: var(--warning);
-        --tl-bg: var(--warning-bg);
-        --tl-hover: var(--warning-hover);
-        --tl-marker: var(--text-warning);
-        --tl-text: var(--warning-muted);
+        --tl-color: var(--spk-warning);
+        --tl-bg: var(--spk-warning-bg);
+        --tl-hover: var(--spk-warning-hover);
+        --tl-marker: var(--spk-text-warning);
+        --tl-text: var(--spk-warning-muted);
     }
 
     .timeline-palette-success {
-        --tl-color: var(--success);
-        --tl-bg: var(--success-bg);
-        --tl-hover: var(--success-hover);
-        --tl-marker: var(--text-success);
-        --tl-text: var(--success-muted);
+        --tl-color: var(--spk-success);
+        --tl-bg: var(--spk-success-bg);
+        --tl-hover: var(--spk-success-hover);
+        --tl-marker: var(--spk-text-success);
+        --tl-text: var(--spk-success-muted);
     }
 
     .timeline-palette-info {
-        --tl-color: var(--info);
-        --tl-bg: var(--info-bg);
-        --tl-hover: var(--info-hover);
-        --tl-marker: var(--text-info);
-        --tl-text: var(--info-muted);
+        --tl-color: var(--spk-info);
+        --tl-bg: var(--spk-info-bg);
+        --tl-hover: var(--spk-info-hover);
+        --tl-marker: var(--spk-text-info);
+        --tl-text: var(--spk-info-muted);
     }
 
     /* Sizes --------------------------------------------------------------- */
@@ -202,12 +202,12 @@
     }
 
     .timeline-flat {
-        background: var(--tone);
+        background: var(--spk-tone);
         padding: var(--tl-container-pad);
     }
 
     .timeline-outlined {
-        border: var(--spk-border) solid var(--tone-hover);
+        border: var(--spk-border) solid var(--spk-tone-hover);
         padding: var(--tl-container-pad);
     }
 
@@ -222,11 +222,11 @@
 
     .timeline-elevation-subtle.timeline-flat,
     .timeline-elevation-subtle.timeline-outlined {
-        box-shadow: var(--spk-elevation-subtle) var(--shadow-subtle);
+        box-shadow: var(--spk-elevation-subtle) var(--spk-shadow-subtle);
     }
 
     .timeline-elevation-hard.timeline-flat,
     .timeline-elevation-hard.timeline-outlined {
-        box-shadow: var(--spk-elevation-hard) var(--shadow-hard);
+        box-shadow: var(--spk-elevation-hard) var(--spk-shadow-hard);
     }
 </style>

@@ -132,7 +132,7 @@
         width: var(--checkbox-size, 18px);
         height: var(--checkbox-size, 18px);
         border-radius: var(--spk-radius-edge);
-        border: var(--spk-border) solid var(--text-muted);
+        border: var(--spk-border) solid var(--spk-text-muted);
         background: transparent;
         transition: border-color var(--spk-duration-base) ease, background var(--spk-duration-base) ease;
     }
@@ -154,8 +154,8 @@
 
     /* Checked state */
     .checkbox-input:checked ~ .checkbox-control {
-        border-color: var(--checkbox-checked-color, var(--accent));
-        background: var(--checkbox-checked-color, var(--accent));
+        border-color: var(--checkbox-checked-color, var(--spk-accent));
+        background: var(--checkbox-checked-color, var(--spk-accent));
     }
 
     .checkbox-input:checked ~ .checkbox-control::after {
@@ -199,13 +199,13 @@
     /* Palettes ------------------------------------------------------------ */
 
     .checkbox-palette-accent {
-        --checkbox-checked-color: var(--accent);
-        --checkbox-check-color: var(--text-accent);
+        --checkbox-checked-color: var(--spk-accent);
+        --checkbox-check-color: var(--spk-text-accent);
     }
 
     .checkbox-palette-tone {
-        --checkbox-checked-color: var(--text);
-        --checkbox-check-color: var(--tone-bg);
+        --checkbox-checked-color: var(--spk-text);
+        --checkbox-check-color: var(--spk-tone-bg);
     }
 
     /* Disabled ------------------------------------------------------------ */
@@ -227,7 +227,7 @@
     /* Focus visible - keyboard nav ---------------------------------------- */
 
     .checkbox-input:focus-visible ~ .checkbox-control {
-        outline: 2px solid var(--accent);
+        outline: 2px solid var(--spk-accent);
         outline-offset: 3px;
     }
 </style>

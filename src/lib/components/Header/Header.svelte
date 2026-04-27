@@ -81,7 +81,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        border-bottom: var(--spk-border-accent) solid var(--accent);
+        border-bottom: var(--spk-border-accent) solid var(--spk-accent);
         padding: var(--header-padding, 0 5%);
         z-index: var(--spk-z-sticky);
     }
@@ -91,15 +91,15 @@
 
     /* Palette - tone (default: card background) */
     .header-palette-tone {
-        background: var(--tone);
-        color: var(--text);
+        background: var(--spk-tone);
+        color: var(--spk-text);
     }
 
     /* Palette - accent */
     .header-palette-accent {
-        background: var(--accent);
-        color: var(--text-accent);
-        border-bottom-color: var(--tone-hover);
+        background: var(--spk-accent);
+        color: var(--spk-text-accent);
+        border-bottom-color: var(--spk-tone-hover);
     }
 
     /* Slots layout */

@@ -91,8 +91,8 @@
 
     button.list-item:focus { outline: none; }
     button.list-item:focus-visible {
-        outline: var(--focus-ring-width) solid var(--focus-ring);
-        outline-offset: var(--focus-ring-offset);
+        outline: var(--spk-focus-ring-width) solid var(--spk-focus-ring);
+        outline-offset: var(--spk-focus-ring-offset);
     }
 
     /* Base */
@@ -107,31 +107,31 @@
     /* Palette - tone ---------------------------------------------------- */
 
     .list-item-tone {
-        background: var(--tone);
-        color: var(--text);
+        background: var(--spk-tone);
+        color: var(--spk-text);
     }
 
     button.list-item-tone:hover {
-        background: var(--tone-hover);
+        background: var(--spk-tone-hover);
     }
 
     button.list-item-tone.list-item-active {
-        border-color: var(--accent);
+        border-color: var(--spk-accent);
     }
 
     /* Palette - accent -------------------------------------------------- */
 
     .list-item-accent {
-        background: var(--accent);
-        color: var(--text-accent);
+        background: var(--spk-accent);
+        color: var(--spk-text-accent);
     }
 
     button.list-item-accent:hover {
-        background: var(--accent-hover);
+        background: var(--spk-accent-hover);
     }
 
     button.list-item-accent.list-item-active {
-        border-color: var(--accent-muted);
+        border-color: var(--spk-accent-muted);
     }
 
     /* Palette - ghost (adapts to context via currentColor) -------------- */
@@ -152,86 +152,86 @@
     /* Palette - error --------------------------------------------------- */
 
     .list-item-error {
-        background: var(--error);
-        color: var(--text-error);
+        background: var(--spk-error);
+        color: var(--spk-text-error);
     }
 
     button.list-item-error:hover {
-        background: var(--error-hover);
+        background: var(--spk-error-hover);
     }
 
     button.list-item-error.list-item-active {
-        border-color: var(--error-muted);
+        border-color: var(--spk-error-muted);
     }
 
     /* Palette - warning ------------------------------------------------- */
 
     .list-item-warning {
-        background: var(--warning);
-        color: var(--text-warning);
+        background: var(--spk-warning);
+        color: var(--spk-text-warning);
     }
 
     button.list-item-warning:hover {
-        background: var(--warning-hover);
+        background: var(--spk-warning-hover);
     }
 
     button.list-item-warning.list-item-active {
-        border-color: var(--warning-muted);
+        border-color: var(--spk-warning-muted);
     }
 
     /* Palette - success ------------------------------------------------- */
 
     .list-item-success {
-        background: var(--success);
-        color: var(--text-success);
+        background: var(--spk-success);
+        color: var(--spk-text-success);
     }
 
     button.list-item-success:hover {
-        background: var(--success-hover);
+        background: var(--spk-success-hover);
     }
 
     button.list-item-success.list-item-active {
-        border-color: var(--success-muted);
+        border-color: var(--spk-success-muted);
     }
 
     /* Palette - info ---------------------------------------------------- */
 
     .list-item-info {
-        background: var(--info);
-        color: var(--text-info);
+        background: var(--spk-info);
+        color: var(--spk-text-info);
     }
 
     button.list-item-info:hover {
-        background: var(--info-hover);
+        background: var(--spk-info-hover);
     }
 
     button.list-item-info.list-item-active {
-        border-color: var(--info-muted);
+        border-color: var(--spk-info-muted);
     }
 
     /* Palette - neutral ------------------------------------------------- */
 
     .list-item-neutral {
-        background: var(--neutral);
-        color: var(--text-neutral);
+        background: var(--spk-neutral);
+        color: var(--spk-text-neutral);
     }
 
     button.list-item-neutral:hover {
-        background: var(--neutral-hover);
+        background: var(--spk-neutral-hover);
     }
 
     button.list-item-neutral.list-item-active {
-        border-color: var(--neutral-muted);
+        border-color: var(--spk-neutral-muted);
     }
 
     /* Elevation --------------------------------------------------------- */
 
     .list-item-elevation-subtle {
-        box-shadow: var(--spk-elevation-subtle) var(--shadow-subtle);
+        box-shadow: var(--spk-elevation-subtle) var(--spk-shadow-subtle);
     }
 
     .list-item-elevation-hard {
-        box-shadow: var(--spk-elevation-hard) var(--shadow-hard);
+        box-shadow: var(--spk-elevation-hard) var(--spk-shadow-hard);
     }
 
     /* Rounded ----------------------------------------------------------- */

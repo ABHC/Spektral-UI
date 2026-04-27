@@ -35,26 +35,26 @@
         display: flex;
         flex-direction: column;
         gap: 0.25rem;
-        font-family: var(--font-body);
+        font-family: var(--spk-font-body);
     }
 
     .explorer-palette-accent {
-        color: var(--text-accent);
-        --explorer-text: var(--text-accent);
-        --explorer-muted: var(--text-accent);
-        --explorer-border: var(--tone-ghost-hover);
-        --explorer-hover-bg: var(--tone-ghost-hover);
-        --explorer-active: var(--text-accent);
-        --explorer-active-border: var(--text-accent);
+        color: var(--spk-text-accent);
+        --explorer-text: var(--spk-text-accent);
+        --explorer-muted: var(--spk-text-accent);
+        --explorer-border: var(--spk-tone-ghost-hover);
+        --explorer-hover-bg: var(--spk-tone-ghost-hover);
+        --explorer-active: var(--spk-text-accent);
+        --explorer-active-border: var(--spk-text-accent);
     }
 
     .explorer-palette-tone {
-        color: var(--text);
-        --explorer-text: var(--text);
-        --explorer-muted: var(--text-muted);
-        --explorer-border: var(--tone-hover);
-        --explorer-hover-bg: var(--tone-hover);
-        --explorer-active: var(--accent-muted);
-        --explorer-active-border: var(--accent-muted);
+        color: var(--spk-text);
+        --explorer-text: var(--spk-text);
+        --explorer-muted: var(--spk-text-muted);
+        --explorer-border: var(--spk-tone-hover);
+        --explorer-hover-bg: var(--spk-tone-hover);
+        --explorer-active: var(--spk-accent-muted);
+        --explorer-active-border: var(--spk-accent-muted);
     }
 </style>

@@ -26,8 +26,8 @@ export const navConfig = {
         },
 
         // Colour palette mode.
-        // accent → background: --accent, buttons inherit --text-accent
-        // tone → background: --card, buttons inherit --text
+        // accent → background: --spk-accent, buttons inherit --spk-text-accent
+        // tone → background: --card, buttons inherit --spk-text
         palette: {
             accent: "nav-palette-accent",
             tone:   "nav-palette-tone",

@@ -91,7 +91,7 @@
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.5px;
-        color: var(--sel-label-color, var(--text-muted));
+        color: var(--sel-label-color, var(--spk-text-muted));
     }
 
     .selector-options {
