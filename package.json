@@ -1,6 +1,6 @@
 {
   "name": "@abhc/spektral-ui",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "S Svelte 5 design system. Customisable, composable and accessible. WCAG-focused and theme driven. ",
   "license": "GPL-3.0-only",
   "author": "ABHC",
