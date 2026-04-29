@@ -13,7 +13,7 @@
         size? : Size;
         to_copy: string | undefined;
         elevation?: Elevation;
-        raised?: boolean;
+        elevation_persist?: boolean;
         rounded?: boolean;
     }
 
@@ -23,7 +23,7 @@
         size = "sm",
         to_copy = undefined,
         elevation = "none",
-        raised= false,
+        elevation_persist= false,
         rounded = false
     }: Props = $props();
 
@@ -50,7 +50,7 @@
     palette={palette}
     size={size}
     elevation={elevation}
-    raised={raised}
+    elevation_persist={elevation_persist}
     rounded={rounded}
     onclick={handleCopy} 
     aria_label="Copy elements"

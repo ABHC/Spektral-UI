@@ -48,8 +48,8 @@ export interface Tile {
 
 /*
     Controls image placement.
-    - In "background" mode: CSS background-position value ("center", "top", etc.)
-    - In "decorative" mode: anchor corner/edge for the floating image element.
+    - In "image" mode: CSS background-position value ("center", "top", etc.)
+    - In "mockup" mode: anchor corner/edge for the floating image element.
       "top-right" | "top-left" | "top-center" | "right" | "left"
     Accepts any string so callers can pass arbitrary CSS bg-position values.
 */
@@ -62,10 +62,10 @@ export type ImagePosition =
 /*
     Whether tiles display a background image (DesignGallery style),
     a flat card (AppsGallery style), or a flat card with a decorative
-    image anchored to a corner/edge (decorative style).
+    image anchored to a corner/edge (mockup style).
     Controlled at the grid level. A tile with no media falls back to flat.
 */
-export type ImageMode = "image" | "mock-up" | "flat";
+export type ImageMode = "image" | "mockup" | "flat";
 
 /*
     Number of grid columns on desktop (>= 1024px).
@@ -80,6 +80,31 @@ export type Columns = 2 | 3 | 4;
 */
 export type HeroSpan = "half" | "full";
 
+/*
+    Elevation level applied to every tile.
+    "none" → no shadow
+    "subtle" → light shadow
+    "hard" → strong shadow
+*/
+export type TileGridElevation = "none" | "subtle" | "hard";
+
+/*
+    Visual effect overlaying the whole grid (decorative layer behind the tiles).
+*/
+export type TileGridEffect = "none" | "glow" | "blur" | "fade";
+
+/*
+    Mask shape applied to the pattern layer.
+    "ellipse" → centered radial mask
+    "fade"    → linear gradient mask along `pattern_mask_direction`
+*/
+export type TileGridMask = "none" | "ellipse" | "fade";
+
+/*
+    Direction of the linear mask gradient when `pattern_mask` is "fade".
+*/
+export type TileGridMaskDirection = "top" | "bottom" | "left" | "right";
+
 // Config interface
 
 /*
@@ -89,12 +114,12 @@ export type HeroSpan = "half" | "full";
     hero_span : How hero tiles span on desktop
     gap : Gap between tiles - any valid CSS length value
     show_hero_badge : Show a "Featured" badge on hero tiles at all breakpoints
-    show_hero_border : Show an accent border on hero tiles
     excerpt_length : Maximum number of characters for the localised abstract excerpt on normal tiles.
     href_base : Base path used to build tile hrefs: "{href_base}/{tile.id}
+    rounded : Apply --spk-radius-round to every tile
+    elevation : Tile elevation level
+    elevation_persist : When true, elevation shadow is shown permanently. When false, only on hover.
 */
-
-export type Elevation = "none" | "subtle" | "hard";
 
 export interface TileGridConfig {
     image_mode: ImageMode;
@@ -103,12 +128,11 @@ export interface TileGridConfig {
     hero_span: HeroSpan;
     gap: string;
     show_hero_badge: boolean;
-    show_hero_border: boolean;
     excerpt_length: number;
     href_base: string;
     rounded: boolean;
-    elevation: Elevation;
-    raised: boolean;
+    elevation: TileGridElevation;
+    elevation_persist: boolean;
 }
 
 // Defaults
@@ -120,10 +144,9 @@ export const defaultTileGridConfig: TileGridConfig = {
     hero_span: "half",
     gap: "1.5rem",
     show_hero_badge: true,
-    show_hero_border: true,
     excerpt_length: 52,
     href_base: "/projects",
     rounded: false,
     elevation: "none",
-    raised: false,
+    elevation_persist: false,
 };

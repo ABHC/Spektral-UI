@@ -15,7 +15,7 @@
         palette?: Palette;
         size?: Size;
         elevation?: Elevation;
-        raised?: boolean;
+        elevation_persist?: boolean;
         uppercase?: boolean;
         animate?: Animate;
         active?: boolean;
@@ -32,7 +32,7 @@
         palette = "accent",
         size = "md",
         elevation = "none",
-        raised = false,
+        elevation_persist = false,
         uppercase = false,
         animate = undefined,
         active = false,
@@ -52,7 +52,7 @@
             palette,
             size,
             elevation,
-            raised,
+            elevation_persist,
             animate,
             uppercase,
             active,
@@ -589,13 +589,13 @@
         box-shadow: var(--spk-elevation-hard) var(--spk-shadow-hard);
     }
 
-    /* Elevation - constant (raised=true) ------------------------------- */
+    /* Elevation - constant (elevation_persist=true) -------------------- */
 
-    .btn-raised.btn-elevation-subtle {
+    .btn-elevation-persist.btn-elevation-subtle {
         box-shadow: var(--spk-elevation-subtle) var(--spk-shadow-subtle);
     }
 
-    .btn-raised.btn-elevation-hard {
+    .btn-elevation-persist.btn-elevation-hard {
         box-shadow: var(--spk-elevation-hard) var(--spk-shadow-hard);
     }
 

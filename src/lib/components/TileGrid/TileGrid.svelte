@@ -4,40 +4,40 @@
     import {
         defaultTileGridConfig,
         type Tile,
-        type TileGridConfig,
         type ImageMode,
         type ImagePosition,
         type Columns,
         type HeroSpan,
-        type Elevation,
+        type TileGridElevation,
+        type TileGridEffect,
+        type TileGridMask,
+        type TileGridMaskDirection,
     } from "./tilegrid.config.js";
 
     import { type PatternPreset, PATTERN_PRESETS, tintPattern } from "../../utils/patterns.js";
 
-    type Effect = "none" | "glow" | "blur" | "fade";
-    type Mask = "none" | "ellipse" | "fade";
-    type MaskDirection = "top" | "bottom" | "left" | "right";
-
-    // Props
+    // Props -------------------------------------------------------------------
 
     /*
         Props
         tiles : Array of tiles to display. Accepts any object satisfying the Tile interface
         locale : Current locale key used to resolve `tile.abstract[locale]`.
-        image_mode : "image" | "mock-up" | "flat" - default: "image"
+        image_mode : "image" | "mockup" | "flat" - default: "image"
         image_position : In image mode: CSS background-position ("center", "top"…).
-                         In mock-up mode: anchor for the floating image
+                         In mockup mode: anchor for the floating image
                          ("top-right" | "top-left" | "top-center" | "right" | "left").
-        image_size : Mock-up mode only. CSS size value passed as --tg-deco-size.
+        image_size : Mockup mode only. CSS size value passed as --tg-mockup-size.
                      Controls width for top-* positions, height for side positions.
                      e.g. "280px", "60%", "18rem". Default: CSS fallback (55% / 90%).
         columns : Number of columns on desktop (>= 1024px) - default: 3
         hero_span : How hero tiles span on desktop - default: "half"
         gap : Gap between tiles - any valid CSS length - default: "1.5rem"
         show_hero_badge : Show "Featured" badge on hero tiles - default: true
-        show_hero_border : Show accent border on hero tiles - default: true
         excerpt_length : Max characters for the abstract excerpt on normal tiles (Default: 52)
         href_base : Base path for tile hrefs: "{href_base}/{tile.id}"
+        rounded : Apply rounded corners to every tile - default: false
+        elevation : Tile elevation level - default: "none"
+        elevation_persist : Show elevation shadow permanently (true) or only on hover (false) - default: false
     */
 
     interface Props {
@@ -50,20 +50,19 @@
         hero_span?: HeroSpan;
         gap?: string;
         show_hero_badge?: boolean;
-        show_hero_border?: boolean;
         excerpt_length?: number;
         href_base?: string;
         rounded?: boolean;
-        elevation?: Elevation;
-        raised?: boolean;
+        elevation?: TileGridElevation;
+        elevation_persist?: boolean;
         pattern?: PatternPreset | string;
         pattern_color?: string;
         pattern_opacity?: number;
         pattern_size?: string;
-        pattern_effect?: Effect;
+        pattern_effect?: TileGridEffect;
         pattern_effect_opacity?: number;
-        pattern_mask?: Mask;
-        pattern_mask_direction?: MaskDirection;
+        pattern_mask?: TileGridMask;
+        pattern_mask_direction?: TileGridMaskDirection;
         pattern_mask_size?: number;
     }
 
@@ -77,12 +76,11 @@
         hero_span = defaultTileGridConfig.hero_span,
         gap = defaultTileGridConfig.gap,
         show_hero_badge = defaultTileGridConfig.show_hero_badge,
-        show_hero_border = defaultTileGridConfig.show_hero_border,
         excerpt_length = defaultTileGridConfig.excerpt_length,
         href_base = defaultTileGridConfig.href_base,
         rounded = defaultTileGridConfig.rounded,
         elevation = defaultTileGridConfig.elevation,
-        raised = defaultTileGridConfig.raised,
+        elevation_persist = defaultTileGridConfig.elevation_persist,
         pattern = "none",
         pattern_color = "white",
         pattern_opacity = 0.1,
@@ -109,7 +107,7 @@
         if (pattern_mask === "ellipse") {
             return `radial-gradient(ellipse ${pattern_mask_size}% ${pattern_mask_size}% at 50% 50%, black 20%, transparent ${pattern_mask_size}%)`;
         }
-        const dir_map: Record<MaskDirection, string> = {
+        const dir_map: Record<TileGridMaskDirection, string> = {
             top: "to top",
             bottom: "to bottom",
             left: "to left",
@@ -201,21 +199,20 @@
 
                 {@const is_hero = tile.hero === true}
                 {@const use_image = image_mode === "image" && has_image(tile)}
-                {@const use_decorative = image_mode === "mock-up" && has_image(tile)}
-                {@const mode_class = use_image ? "tg-tile-image" : use_decorative ? "tg-tile-deco" : "tg-tile-flat"}
+                {@const use_mockup = image_mode === "mockup" && has_image(tile)}
+                {@const mode_class = use_image ? "tg-tile-image" : use_mockup ? "tg-tile-mockup" : "tg-tile-flat"}
                 {@const span_class = hero_span_class(is_hero)}
                 {@const hero_class = is_hero ? "tg-tile-hero" : ""}
-                {@const border_class = is_hero && show_hero_border ? "tg-tile-hero-border" : ""}
-                {@const deco_pos_class = use_decorative ? `tg-deco-${image_position}` : ""}
+                {@const mockup_pos_class = use_mockup ? `tg-mockup-${image_position}` : ""}
                 {@const rounded_class = rounded ? "tg-rounded" : ""}
                 {@const elevation_class = elevation !== "none" ? `tg-elevation-${elevation}` : ""}
-                {@const raised_class = raised ? "tg-raised" : ""}
+                {@const elevation_persist_class = elevation_persist ? "tg-elevation-persist" : ""}
                 {@const abstract = localise(tile.abstract)}
                 {@const hero_text = localise(tile.hero_text)}
 
                 <a
                     href={tile.id ? `${href_base}/${tile.id}` : undefined}
-                    class="tg-tile {mode_class} {hero_class} {span_class} {border_class} {deco_pos_class} {rounded_class} {elevation_class} {raised_class}"
+                    class="tg-tile {mode_class} {hero_class} {span_class} {mockup_pos_class} {rounded_class} {elevation_class} {elevation_persist_class}"
                     style={use_image ? image_style(tile) : undefined}
                     aria-label="{tile.name}{is_hero && hero_text ? ` — ${hero_text}` : ''}"
                     data-sveltekit-preload-data={tile.id ? "hover" : undefined}
@@ -244,25 +241,25 @@
                         </span>
                     {/if}
 
-                    <!-- Pattern background layer (flat and deco tiles only) -->
+                    <!-- Pattern background layer (flat and mockup tiles only) -->
                     {#if pattern_bg !== "none" && !use_image}
                         <div class="tg-pattern"></div>
                     {/if}
 
-                    <!-- Decorative image - anchored to a corner/edge, clipped by tile -->
-                    {#if use_decorative}
+                    <!-- Mockup image - anchored to a corner/edge, clipped by tile -->
+                    {#if use_mockup}
                         <img
-                            class="tg-deco-img"
+                            class="tg-mockup-img"
                             src={tile.media![0].src}
                             alt=""
                             aria-hidden="true"
-                            style={image_size ? `--tg-deco-size: ${image_size};` : undefined}
+                            style={image_size ? `--tg-mockup-size: ${image_size};` : undefined}
                         />
                     {/if}
 
                     <!-- Tile content -->
 
-                    <div class="tg-layout {use_image || use_decorative ? 'tg-overlay' : ''}">
+                    <div class="tg-layout {use_image || use_mockup ? 'tg-overlay' : ''}">
                         <div class="tg-content">
 
                             <!-- Origin + years badges -->
@@ -427,13 +424,13 @@
         box-shadow: var(--spk-elevation-hard) var(--spk-shadow-hard);
     }
 
-    /* Elevation - constant (raised=true) ------------------------------ */
+    /* Elevation - constant (elevation_persist=true) ------------------- */
 
-    .tg-raised.tg-elevation-subtle {
+    .tg-elevation-persist.tg-elevation-subtle {
         box-shadow: var(--spk-elevation-subtle) var(--spk-shadow-subtle);
     }
 
-    .tg-raised.tg-elevation-hard {
+    .tg-elevation-persist.tg-elevation-hard {
         box-shadow: var(--spk-elevation-hard) var(--spk-shadow-hard);
     }
 
@@ -476,10 +473,6 @@
         background: var(--spk-tone);
     }
 
-    .tg-tile-flat.tg-tile-hero-border {
-        border-left: var(--spk-border-accent) solid var(--spk-accent);
-    }
-
     .tg-tile-flat.tg-tile-hero {
         border-left-color: var(--spk-accent);
     }
@@ -495,43 +488,39 @@
         }
     }
 
-    /* MOCK-UP TILE ---------------------------------------------------- */
+    /* MOCKUP TILE ----------------------------------------------------- */
     /*
         Flat card look + a <img> anchored to a corner/edge via position:absolute.
         The tile's overflow:hidden clips the image at the border-radius boundary,
         creating the "peek-out" effect without the image leaving the card.
-        image_position controls the CSS class (tg-deco-top-right, etc.).
-        image_size passes --tg-deco-size to control the image dimension.
+        image_position controls the CSS class (tg-mockup-top-right, etc.).
+        image_size passes --tg-mockup-size to control the image dimension.
     */
 
-    .tg-tile-deco {
+    .tg-tile-mockup {
         aspect-ratio: 4 / 3;
         background: var(--spk-tone);
     }
 
-    .tg-tile-deco.tg-tile-hero-border {
+    .tg-tile-mockup.tg-tile-hero {
         border-left: var(--spk-border-accent) solid var(--spk-accent);
-    }
-
-    .tg-tile-deco.tg-tile-hero {
-        border-left-color: var(--spk-accent);
         background: var(--spk-accent-ghost-hover);
     }
 
-    .tg-tile-deco:hover {
+    .tg-tile-mockup:hover {
         border-left: var(--spk-border-accent) solid var(--spk-accent);
         background: var(--spk-tone-hover);
     }
 
     @media (min-width: 640px) {
-        .tg-tile-deco:hover {
+        .tg-tile-mockup:hover {
             transform: translateX(3px);
         }
     }
 
-    /* Decorative image element */
+    /* Mockup image element */
 
-    .tg-deco-img {
+    .tg-mockup-img {
         position: absolute;
         object-fit: contain;
         pointer-events: none;
@@ -540,51 +529,51 @@
     }
 
     /* Top anchors: width-driven (controls how much of the tile width the image takes) */
-    .tg-deco-top-right .tg-deco-img,
-    .tg-deco-top-left  .tg-deco-img,
-    .tg-deco-top-center .tg-deco-img {
-        width: var(--tg-deco-size, 55%);
+    .tg-mockup-top-right .tg-mockup-img,
+    .tg-mockup-top-left  .tg-mockup-img,
+    .tg-mockup-top-center .tg-mockup-img {
+        width: var(--tg-mockup-size, 55%);
         height: auto;
     }
 
     /* Side anchors: height-driven */
-    .tg-deco-right .tg-deco-img,
-    .tg-deco-left  .tg-deco-img {
-        height: var(--tg-deco-size, 90%);
+    .tg-mockup-right .tg-mockup-img,
+    .tg-mockup-left  .tg-mockup-img {
+        height: var(--tg-mockup-size, 90%);
         width:  auto;
     }
 
     /* Placement per anchor */
-    .tg-deco-top-right .tg-deco-img { 
+    .tg-mockup-top-right .tg-mockup-img { 
         top: 0; 
         right: 0; 
     }
 
-    .tg-deco-top-left .tg-deco-img { 
+    .tg-mockup-top-left .tg-mockup-img { 
         top: 0; 
         left: 0; 
     }
 
-    .tg-deco-top-center .tg-deco-img { 
+    .tg-mockup-top-center .tg-mockup-img { 
         top: 0; 
         left: 50%; 
         transform: translateX(-50%); 
     }
 
-    .tg-deco-right .tg-deco-img { 
+    .tg-mockup-right .tg-mockup-img { 
         top: 50%; 
         right: 0; 
         transform: translateY(-50%); 
     }
-    .tg-deco-left .tg-deco-img { 
+    .tg-mockup-left .tg-mockup-img { 
         top: 50%; 
         left: 0; 
         transform: translateY(-50%); 
     }
 
     /* Text layout: reserve space on the opposite side from the image */
-    .tg-deco-right .tg-layout { padding-right: 42%; }
-    .tg-deco-left  .tg-layout { padding-left:  42%; }
+    .tg-mockup-right .tg-layout { padding-right: 42%; }
+    .tg-mockup-left  .tg-layout { padding-left:  42%; }
 
     /* Hero sizing ----------------------------------------------------- */
 
@@ -598,13 +587,13 @@
     @media (min-width: 1024px) {
         .tg-tile-image.tg-tile-hero-half,
         .tg-tile-flat.tg-tile-hero-half,
-        .tg-tile-deco.tg-tile-hero-half {
+        .tg-tile-mockup.tg-tile-hero-half {
             aspect-ratio: auto;
         }
 
         .tg-tile-image.tg-tile-hero-full,
         .tg-tile-flat.tg-tile-hero-full,
-        .tg-tile-deco.tg-tile-hero-full {
+        .tg-tile-mockup.tg-tile-hero-full {
             aspect-ratio: 8 / 3;
         }
     }
@@ -612,7 +601,7 @@
     @media (min-width: 640px) and (max-width: 1023px) {
         .tg-tile-image.tg-tile-hero,
         .tg-tile-flat.tg-tile-hero,
-        .tg-tile-deco.tg-tile-hero {
+        .tg-tile-mockup.tg-tile-hero {
             aspect-ratio: 8 / 3;
         }
     }

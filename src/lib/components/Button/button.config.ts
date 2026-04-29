@@ -39,8 +39,8 @@ export const buttonConfig = {
             hard: "btn-elevation-hard",
         },
 
-        raised: {
-            true: "btn-raised"
+        elevation_persist: {
+            true: "btn-elevation-persist"
         },
 
         uppercase: { 

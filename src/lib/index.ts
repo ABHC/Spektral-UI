@@ -56,7 +56,10 @@ export { default as Support }         from './components/Support/Support.svelte'
 export { type CommandItem, type CommandGroup }                                from './components/Command/command.config.js';
 export { type BadgeItem }                                                     from './components/Badge/badge.config.js';
 export { type Swatch }                                                        from './components/SwatchRow/swatchRow.config.js';
-export { type Tile, type TileMedia, type Columns, type HeroSpan }            from './components/TileGrid/tilegrid.config.js';
+export { type Tile, type TileMedia, type Columns, type HeroSpan,
+         type ImageMode, type ImagePosition, type TileGridElevation,
+         type TileGridEffect, type TileGridMask,
+         type TileGridMaskDirection }                                         from './components/TileGrid/tilegrid.config.js';
 
 // Prop union types
 export { type Elevation }                                                     from './components/Modal/modal.config.js';

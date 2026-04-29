@@ -16,7 +16,7 @@
         palette?: Palette;
         size?: Size;
         elevation?: Elevation;
-        raised?: boolean;
+        elevation_persist?: boolean;
         uppercase?: boolean;
         animate?: Animate;
         rounded?: boolean;
@@ -30,7 +30,7 @@
         palette = "accent",
         size = "sm",
         elevation = "none",
-        raised= false,
+        elevation_persist= false,
         uppercase = false,
         animate = undefined,
         rounded = false,
@@ -54,7 +54,7 @@
         palette={palette}
         size={size}
         elevation={elevation}
-        raised={raised}
+        elevation_persist={elevation_persist}
         uppercase={uppercase}
         animate={animate}
         rounded={rounded}
