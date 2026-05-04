@@ -438,8 +438,8 @@
     }
 
     .codeblock-tab.is-active {
-        color: var(--spk-accent);
-        border-bottom-color: var(--spk-accent);
+        color: var(--spk-accent-muted);
+        border-bottom-color: var(--spk-accent-muted);
         font-weight: 600;
     }
 

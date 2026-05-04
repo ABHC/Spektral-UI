@@ -16,6 +16,7 @@
         value?: number | null;
         unit?: string;
         max?: number;
+        show_value?: boolean;
     }
 
     let {
@@ -28,6 +29,7 @@
         value = null,
         unit = "",
         max = 100,
+        show_value = true,
     }: Props = $props();
 
     const resolve = createVariant(progressConfig);
@@ -54,7 +56,7 @@
 </script>
 
 <div class="progress-container">
-    {#if !indeterminate}
+    {#if !indeterminate && show_value}
         <span class={value_classes}>{pct}&nbsp;{unit}</span>
     {/if}
 

@@ -62,6 +62,8 @@ export { type Tile, type TileMedia, type Columns, type HeroSpan,
          type TileGridMaskDirection }                                         from './components/TileGrid/tilegrid.config.js';
 
 // Prop union types
+export { type AvatarSize, type AvatarStatus, type AvatarPalette,
+         type AvatarShape, type AvatarElevation }                             from './components/Avatar/avatar.config.js';
 export { type Elevation }                                                     from './components/Modal/modal.config.js';
 export { type PopoverPalette, type PopoverElevation,
          type PopoverDirection, type PopoverAlign }                           from './components/Popover/popover.config.js';
